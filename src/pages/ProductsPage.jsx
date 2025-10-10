@@ -1,9 +1,18 @@
 import { Link } from 'react-router-dom'
 import { Eye, Cpu, Network, Zap, Settings, Shield, ArrowRight } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const ProductsPage = () => {
   return (
-    <div style={{ backgroundColor: 'var(--concrete-light)' }}>
+    <>
+      <SEO 
+        title="ARGUS Products - Smart Glasses & Visual Intelligence Platform"
+        description="Discover ARGUS Smart Glasses and Visual Intelligence Platform. Open-source hardware and software solutions for frontline workers in automotive, healthcare, manufacturing, and more."
+        keywords="ARGUS smart glasses, visual intelligence platform, AR hardware, open source glasses, frontline technology, ARGUS products"
+        image="https://argus.global/images/argus-glasses-black.png"
+        url="https://argus.global/products"
+      />
+      <div style={{ backgroundColor: 'var(--concrete-light)' }}>
       {/* Hero Section */}
       <section className="hero-gradient text-pure-white py-32" style={{ background: 'linear-gradient(135deg, var(--carbon-black) 0%, var(--graphite-gray) 100%)', color: 'var(--pure-white)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -176,7 +185,8 @@ const ProductsPage = () => {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 

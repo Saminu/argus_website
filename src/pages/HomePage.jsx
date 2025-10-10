@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Shield, Zap, Globe } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 import Hls from 'hls.js'
+import SEO from '../components/SEO'
 
 const HomePage = () => {
   const videoRef = useRef(null)
@@ -56,29 +57,34 @@ const HomePage = () => {
   }, [])
 
   return (
-    <div style={{ backgroundColor: 'var(--concrete-light)' }}>
+    <>
+      <SEO 
+        title="ARGUS - Wearable Intelligence Built for Frontline Workers"
+        description="Rugged smart glasses powered by on-device AI models that deliver real-time insights, hands-free. Empower your workforce with vision intelligence that works anywhere."
+        keywords="wearable intelligence, smart glasses, on-device AI, frontline workers, vision intelligence, rugged smart glasses, real-time insights, hands-free technology"
+        image="https://argus.global/images/argus-logo-updated.png"
+        url="https://argus.global/"
+      />
+      <div style={{ backgroundColor: 'var(--concrete-light)' }}>
       <section className="hero-gradient text-pure-white py-32" style={{ background: 'linear-gradient(135deg, var(--carbon-black) 0%, var(--graphite-gray) 100%)', color: 'var(--pure-white)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-block mb-6 px-6 py-2 rounded-sm" style={{ backgroundColor: 'var(--graphite-gray)', border: '1px solid rgba(255, 255, 255, 0.1)' }}>
-              <span className="text-sm font-bold tracking-wide">NEXT-GENERATION VISUAL INTELLIGENCE</span>
+              <span className="text-sm font-bold tracking-wide">NEXT-GENERATION WEARABLE INTELLIGENCE</span>
             </div>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
-              ARGUS
+              Wearable Intelligence.<br />Built for Frontline Workers.
             </h1>
-            <p className="text-2xl md:text-3xl mb-4 font-light" style={{ color: 'var(--concrete-light)' }}>
-              Open-Source Smart Glasses & Visual Intelligence Platform
-            </p>
             <p className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-              Empowering frontline workers with hands-free technology and democratizing visual intelligence through open hardware.
+              Rugged smart glasses powered by on-device AI models that deliver real-time insights, hands-free. Empower your workforce with vision intelligence that works anywhere.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/products" className="btn-primary">
-                <span>Explore Products</span>
+                <span>Explore Devices & AI</span>
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link to="/company" className="btn-secondary">
-                Contact Sales
+                Schedule a Demo
               </Link>
             </div>
           </div>
@@ -193,7 +199,8 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 
