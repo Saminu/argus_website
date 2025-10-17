@@ -133,6 +133,32 @@ Update `public/sitemap.xml` when adding new pages:
 - **Lucide React**: Icon library
 - **Radix UI**: Accessible component primitives
 
+## Deployment
+
+This is a Single Page Application (SPA) that requires server-side routing configuration to handle direct links to internal pages.
+
+### Netlify
+- Uses `netlify.toml` and `public/_redirects`
+- Automatically configured for SPA routing
+
+### Vercel
+- Uses `vercel.json` for rewrites
+- Automatically handles SPA routing
+
+### Apache
+- Uses `public/.htaccess`
+- Requires mod_rewrite enabled
+
+### Nginx
+- Use the provided `nginx.conf.example`
+- Configure `try_files $uri $uri/ /index.html;`
+
+### Other Platforms
+For other hosting platforms, ensure your server:
+1. Serves `index.html` for all routes that don't match static files
+2. Returns HTTP 200 (not 404) for SPA routes
+3. Handles client-side routing properly
+
 ## Contributing
 
 1. Fork the repository
