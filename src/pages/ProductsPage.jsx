@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
-import { Eye, Cpu, Network, Zap, Settings, Shield, ArrowRight } from 'lucide-react'
+import { Eye, Cpu, Network, Zap, Settings, Shield, ArrowRight, Plane, Wifi, MapPin, Battery, Camera, Radio } from 'lucide-react'
 import SEO from '../components/SEO'
 
 const ProductsPage = () => {
   return (
     <>
       <SEO 
-        title="ARGUS Products - Smart Glasses & Visual Intelligence Platform"
-        description="Discover ARGUS Smart Glasses and Visual Intelligence Platform. Open-source hardware and software solutions for frontline workers in automotive, healthcare, manufacturing, and more."
-        keywords="ARGUS smart glasses, visual intelligence platform, AR hardware, open source glasses, frontline technology, ARGUS products"
+        title="ARGUS Products - Smart Glasses, Drone Network & Visual Intelligence Platform"
+        description="Discover ARGUS Smart Glasses, Drone Network, and Visual Intelligence Platform. Connected open-source hardware and software solutions for frontline workers in automotive, healthcare, manufacturing, and more."
+        keywords="ARGUS smart glasses, drone network, visual intelligence platform, AR hardware, connected drones, open source glasses, frontline technology, ARGUS products, aerial inspection, mesh networking"
         image="https://argus.global/images/argus-glasses-black.png"
         url="https://argus.global/products"
       />
@@ -21,7 +21,7 @@ const ProductsPage = () => {
               Our Products
             </h1>
             <p className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-              Discover Argus Smart Glasses and the Visual Intelligence Platform – open-source solutions for enhanced productivity and safety.
+              Discover Argus Smart Glasses, Drone Network, and the Visual Intelligence Platform – connected open-source solutions for enhanced productivity and safety.
             </p>
             <Link to="/company" className="btn-primary">
               Request a Demo
@@ -120,6 +120,109 @@ const ProductsPage = () => {
         </div>
       </section>
 
+      {/* Argus Drone Network */}
+      <section className="py-24 bg-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="inline-block mb-4 px-4 py-1 rounded-sm" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)', border: '1px solid rgba(60, 90, 255, 0.3)' }}>
+                <span className="text-sm font-semibold" style={{ color: 'var(--steel-blue)' }}>CONNECTED HARDWARE</span>
+              </div>
+              <h2 className="text-5xl font-bold mb-6" style={{ color: 'var(--carbon-black)' }}>Argus Drone Network</h2>
+              <p className="text-xl mb-8 leading-relaxed" style={{ color: 'var(--graphite-gray)' }}>
+                Autonomous drones that seamlessly integrate with Argus Smart Glasses to create a comprehensive visual intelligence network. Extend your field of view and operational capabilities beyond human reach.
+              </p>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center">
+                  <div className="w-8 h-8 rounded-sm flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)' }}>
+                    <Wifi className="h-4 w-4" style={{ color: 'var(--steel-blue)' }} />
+                  </div>
+                  <span style={{ color: 'var(--graphite-gray)' }}>Real-time Glass Synchronization</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-8 h-8 rounded-sm flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)' }}>
+                    <Camera className="h-4 w-4" style={{ color: 'var(--steel-blue)' }} />
+                  </div>
+                  <span style={{ color: 'var(--graphite-gray)' }}>4K Visual Data Streaming</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-8 h-8 rounded-sm flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)' }}>
+                    <MapPin className="h-4 w-4" style={{ color: 'var(--steel-blue)' }} />
+                  </div>
+                  <span style={{ color: 'var(--graphite-gray)' }}>Autonomous Navigation & Mapping</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-8 h-8 rounded-sm flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)' }}>
+                    <Battery className="h-4 w-4" style={{ color: 'var(--steel-blue)' }} />
+                  </div>
+                  <span style={{ color: 'var(--graphite-gray)' }}>Extended Flight Time (45+ mins)</span>
+                </div>
+              </div>
+              <Link to="#" className="btn-primary">
+                View Drone Specs
+              </Link>
+            </div>
+            <div className="relative flex justify-center items-center">
+              <div className="p-8 rounded-sm w-full max-w-md" style={{ backgroundColor: 'var(--graphite-gray)', border: '1px solid #2A2E34' }}>
+                <div className="flex items-center justify-center h-64 text-6xl" style={{ color: 'var(--steel-blue)' }}>
+                  <Plane />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Network Integration */}
+      <section className="py-24 bg-dark text-pure-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-6">Connected Intelligence Network</h2>
+            <p className="text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
+              Experience the power of synchronized visual intelligence across glasses and drones, creating an unprecedented operational awareness ecosystem.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="card">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 rounded-sm flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)' }}>
+                  <Radio className="h-6 w-6" style={{ color: 'var(--steel-blue)' }} />
+                </div>
+                <h3 className="text-2xl font-bold text-pure-white">Mesh Networking</h3>
+              </div>
+              <p className="text-concrete-light leading-relaxed">
+                Drones and glasses form a self-healing mesh network, ensuring continuous connectivity even in challenging environments.
+              </p>
+            </div>
+            
+            <div className="card">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 rounded-sm flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)' }}>
+                  <Eye className="h-6 w-6" style={{ color: 'var(--steel-blue)' }} />
+                </div>
+                <h3 className="text-2xl font-bold text-pure-white">Shared Vision</h3>
+              </div>
+              <p className="text-concrete-light leading-relaxed">
+                Workers can access drone camera feeds directly through their smart glasses, expanding their visual field beyond physical limitations.
+              </p>
+            </div>
+            
+            <div className="card">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 rounded-sm flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)' }}>
+                  <Cpu className="h-6 w-6" style={{ color: 'var(--steel-blue)' }} />
+                </div>
+                <h3 className="text-2xl font-bold text-pure-white">Distributed AI</h3>
+              </div>
+              <p className="text-concrete-light leading-relaxed">
+                AI processing is distributed across the network, with drones and glasses collaborating to analyze complex scenarios in real-time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Use Cases */}
       <section className="py-24 bg-light text-carbon-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -165,6 +268,24 @@ const ProductsPage = () => {
               <h3 className="text-2xl font-bold text-pure-white mb-4">Data Capture & Analytics</h3>
               <p className="text-concrete-light leading-relaxed">
                 Collect rich visual data from the field, process it with on-device AI, and gain actionable insights through customizable dashboards.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="text-2xl font-bold text-pure-white mb-4">Aerial Inspection & Monitoring</h3>
+              <p className="text-concrete-light leading-relaxed">
+                Deploy drones for hard-to-reach inspections while workers view real-time footage through their glasses, enabling collaborative assessment.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="text-2xl font-bold text-pure-white mb-4">Perimeter Security & Surveillance</h3>
+              <p className="text-concrete-light leading-relaxed">
+                Autonomous drone patrols integrated with security personnel wearing smart glasses for comprehensive site monitoring and threat detection.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="text-2xl font-bold text-pure-white mb-4">Emergency Response Coordination</h3>
+              <p className="text-concrete-light leading-relaxed">
+                First responders coordinate with aerial drones for situational awareness, search and rescue operations, and real-time incident assessment.
               </p>
             </div>
           </div>
