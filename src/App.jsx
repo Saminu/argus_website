@@ -11,12 +11,15 @@ import OilGasPage from './pages/OilGasPage'
 import WarehousingPage from './pages/WarehousingPage'
 import ManufacturingPage from './pages/ManufacturingPage'
 import HealthcarePage from './pages/HealthcarePage'
-import DronePage from './pages/DronePage'
+import AerialPage from './pages/AerialPage'
+import MaritimePage from './pages/MaritimePage'
+import ScrollToTop from './components/ScrollToTop'
 import './App.css'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
@@ -29,9 +32,11 @@ function App() {
             <Route path="/solutions/manufacturing" element={<ManufacturingPage />} />
             <Route path="/solutions/healthcare" element={<HealthcarePage />} />
             <Route path="/products" element={<ProductsPage />} />
-            <Route path="/drones" element={<DronePage />} />
+            <Route path="/aerial" element={<AerialPage />} />
+            <Route path="/maritime" element={<MaritimePage />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/company" element={<CompanyPage />} />
+            {/* Legacy route redirect or handle 404 if needed, for now just removing /drones */}
           </Routes>
         </main>
         <Footer />

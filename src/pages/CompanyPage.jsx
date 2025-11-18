@@ -1,104 +1,110 @@
 import { Link } from 'react-router-dom'
-import { Users, Briefcase, Map, Mail, Phone, ArrowRight } from 'lucide-react'
+import { Users, Briefcase, Map, Mail, Phone, ArrowRight, Shield, Globe } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const CompanyPage = () => {
   return (
-    <div style={{ backgroundColor: 'var(--concrete-light)' }}>
-      {/* Hero Section */}
-      <section className="hero-gradient text-pure-white py-32" style={{ background: 'linear-gradient(135deg, var(--carbon-black) 0%, var(--graphite-gray) 100%)', color: 'var(--pure-white)' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
-              About Argus Systems
-            </h1>
-            <p className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-              Pioneering open-source visual intelligence for the frontline workforce.
-            </p>
-            <Link to="/company" className="btn-primary">
-              Our Mission
-            </Link>
-          </div>
-        </div>
-      </section>
+    <>
+      <SEO
+        title="ARGUS Mission - Protecting Democracies"
+        description="We are a defense technology company dedicated to protecting democratic values through superior artificial intelligence and autonomous systems."
+        keywords="defense mission, protecting democracies, AI ethics, national security, defense technology company"
+        image="https://argus.global/images/argus-logo-updated.png"
+        url="https://argus.global/company"
+      />
+      <div className="bg-black min-h-screen text-white font-sans selection:bg-white selection:text-black">
 
-      {/* Mission & Vision */}
-      <section className="py-24 bg-light">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6" style={{ color: 'var(--carbon-black)' }}>Our Vision & Mission</h2>
-            <p className="text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--graphite-gray)' }}>
-              We believe in empowering every frontline worker with secure, transparent, and customizable visual intelligence solutions.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="card">
-              <h3 className="text-2xl font-bold text-pure-white mb-4">Our Mission</h3>
-              <p className="text-concrete-light leading-relaxed">
-                To democratize access to advanced visual intelligence technology, fostering innovation and collaboration through an open-source ecosystem.
-              </p>
-            </div>
-            <div className="card">
-              <h3 className="text-2xl font-bold text-pure-white mb-4">Our Vision</h3>
-              <p className="text-concrete-light leading-relaxed">
-                To be the global leader in open-source smart glasses and visual intelligence platforms, transforming industries and improving lives.
+        {/* Hero Section */}
+        <section className="hero-minimal relative pt-32 pb-20 overflow-hidden border-b border-white/10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-4xl">
+              <h1 className="text-6xl md:text-8xl font-medium mb-8 tracking-tighter leading-tight">
+                Our Mission<br />
+                <span className="text-gray-500">is to Protect.</span>
+              </h1>
+              <p className="text-xl md:text-2xl mb-12 max-w-2xl leading-relaxed text-gray-400 font-light">
+                We believe that the defense of democratic values requires technological superiority. We build the systems that ensure this advantage.
               </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Our Team */}
-      <section className="py-24 bg-graphite text-pure-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6">Meet the Team</h2>
-            <p className="text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-              A dedicated group of engineers, designers, and industry experts committed to open innovation.
+        {/* Manifesto */}
+        <section className="py-32 border-b border-white/10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-2 gap-24">
+              <div>
+                <h2 className="text-3xl font-medium mb-8">The Challenge</h2>
+                <p className="text-lg text-gray-400 font-light leading-relaxed mb-8">
+                  The global security landscape has shifted. Authoritarian regimes are leveraging technology to undermine democratic institutions. The speed of conflict has accelerated beyond human cognitive limits.
+                </p>
+                <p className="text-lg text-gray-400 font-light leading-relaxed">
+                  To preserve peace and stability, democracies must possess defense capabilities that are not just reactive, but predictive and autonomous.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-3xl font-medium mb-8">Our Response</h2>
+                <p className="text-lg text-gray-400 font-light leading-relaxed mb-8">
+                  Argus Systems is building the software infrastructure for the next generation of defense. We reject the notion that AI is inherently dangerous; rather, we believe that responsible, sovereign AI is the ultimate shield against aggression.
+                </p>
+                <p className="text-lg text-gray-400 font-light leading-relaxed">
+                  Our commitment is to open standards, transparency, and the unwavering support of those who defend our freedoms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Values */}
+        <section className="py-32 bg-off-black border-b border-white/10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-3 gap-12">
+              <div className="card group">
+                <Shield className="h-8 w-8 text-white mb-6" strokeWidth={1} />
+                <h3 className="text-2xl font-medium mb-4">Sovereignty First</h3>
+                <p className="text-gray-400 font-light leading-relaxed">
+                  We build systems that guarantee national control. No backdoors, no black boxes. Complete data sovereignty for our partners.
+                </p>
+              </div>
+              <div className="card group">
+                <Globe className="h-8 w-8 text-white mb-6" strokeWidth={1} />
+                <h3 className="text-2xl font-medium mb-4">Global Alliance</h3>
+                <p className="text-gray-400 font-light leading-relaxed">
+                  We collaborate exclusively with democratic nations, fostering a technology alliance that strengthens collective security.
+                </p>
+              </div>
+              <div className="card group">
+                <Users className="h-8 w-8 text-white mb-6" strokeWidth={1} />
+                <h3 className="text-2xl font-medium mb-4">Human-Machine Teaming</h3>
+                <p className="text-gray-400 font-light leading-relaxed">
+                  We design AI to augment human decision-making, not replace it. The human operator remains in the loop for lethal force decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section className="py-32 bg-black text-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl md:text-5xl font-medium mb-8 tracking-tight">
+              Join the Mission
+            </h2>
+            <p className="text-xl mb-12 leading-relaxed text-gray-400 font-light max-w-2xl mx-auto">
+              We are looking for exceptional talent to solve the hardest problems in national security.
             </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Placeholder for team members */}
-            <div className="card text-center">
-              <Users className="h-16 w-16 mx-auto mb-4" style={{ color: 'var(--signal-orange)' }} />
-              <h3 className="text-2xl font-bold text-pure-white mb-2">John Doe</h3>
-              <p className="text-concrete-light">CEO & Founder</p>
-            </div>
-            <div className="card text-center">
-              <Briefcase className="h-16 w-16 mx-auto mb-4" style={{ color: 'var(--signal-orange)' }} />
-              <h3 className="text-2xl font-bold text-pure-white mb-2">Jane Smith</h3>
-              <p className="text-concrete-light">CTO</p>
-            </div>
-            <div className="card text-center">
-              <Map className="h-16 w-16 mx-auto mb-4" style={{ color: 'var(--signal-orange)' }} />
-              <h3 className="text-2xl font-bold text-pure-white mb-2">Peter Jones</h3>
-              <p className="text-concrete-light">Head of Product</p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <a href="mailto:careers@argus.global" className="btn-primary">
+                View Open Roles
+              </a>
+              <a href="mailto:info@argus.global" className="btn-secondary">
+                Contact Us
+              </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Contact Us */}
-      <section className="py-24 bg-dark text-pure-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-5xl font-bold mb-6">
-            Get in Touch
-          </h2>
-          <p className="text-xl mb-10 leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-            Have questions or want to learn more? Reach out to our team.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="mailto:info@argussystems.com" className="btn-primary">
-              <Mail className="h-5 w-5 mr-2" /> Email Us
-            </a>
-            <a href="tel:+1-800-ARGUS-AI" className="btn-secondary">
-              <Phone className="h-5 w-5 mr-2" /> Call Us
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   )
 }
 

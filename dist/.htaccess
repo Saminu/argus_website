@@ -1,0 +1,7 @@
+# Apache .htaccess file for SPA routing
+# Handle React Router routes by serving index.html for all requests
+
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]

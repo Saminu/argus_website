@@ -1,81 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* Brand Colors */
-  --color-carbon-black: #0B0C0E;
-  --color-graphite-gray: #1E2126;
-  --color-concrete-light: #F2F2F2;
+  /* Brand Colors - Minimalist Defense Theme */
+  --color-carbon-black: #000000;
+  /* True Black */
+  --color-off-black: #0A0A0A;
+  --color-graphite-gray: #1A1A1A;
+  --color-concrete-light: #F5F5F5;
   --color-pure-white: #FFFFFF;
-  --color-signal-orange: #3C5AFF; /* This was previously changed to steel blue, now aligning primary to steel blue */
-  --color-primary: var(--color-steel-blue);
-  --color-steel-blue: #3C5AFF;
-  
-  /* Tailwind Color Mappings */
-  --color-background: var(--color-concrete-light);
-  --color-foreground: var(--color-carbon-black);
+  --color-signal-orange: #FFFFFF;
+  /* Removed orange, mapped to white for contrast */
+  --color-primary: var(--color-pure-white);
+  --color-steel-blue: #FFFFFF;
+  /* Removed blue, mapped to white */
+  --color-tactical-green: #FFFFFF;
+  /* Removed green, mapped to white */
+  --color-alert-red: #FFFFFF;
+  /* Removed red, mapped to white */
 
-  --color-primary-foreground: var(--color-pure-white);
-  --color-secondary: var(--color-steel-blue);
-  --color-secondary-foreground: var(--color-pure-white);
+  /* Tailwind Color Mappings */
+  --color-background: var(--color-carbon-black);
+  --color-foreground: var(--color-pure-white);
+
+  --color-primary-foreground: var(--color-carbon-black);
+  --color-secondary: var(--color-pure-white);
+  --color-secondary-foreground: var(--color-carbon-black);
   --color-muted: var(--color-graphite-gray);
   --color-muted-foreground: var(--color-concrete-light);
-  --color-accent: var(--color-signal-orange);
-  --color-accent-foreground: var(--color-pure-white);
+  --color-accent: var(--color-pure-white);
+  --color-accent-foreground: var(--color-carbon-black);
   --color-border: var(--color-graphite-gray);
   --color-input: var(--color-graphite-gray);
-  --color-ring: var(--color-signal-orange);
-  
+  --color-ring: var(--color-pure-white);
+
   /* Radius */
-  --radius: 0.125rem; /* Flat/square corners */
-  --radius-sm: 0rem;
-  --radius-md: 0.125rem;
-  --radius-lg: 0.25rem;
-  --radius-xl: 0.375rem;
+  --radius: 0px;
+  /* Sharp corners */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
 }
 
 :root {
   /* Brand Colors */
-  --carbon-black: #0B0C0E;
-  --graphite-gray: #1E2126;
-  --concrete-light: #F2F2F2;
+  --carbon-black: #000000;
+  --off-black: #0A0A0A;
+  --graphite-gray: #1A1A1A;
+  --concrete-light: #F5F5F5;
   --pure-white: #FFFFFF;
-  --signal-orange: #3C5AFF; /* Ensure signal-orange is steel blue */
-  --steel-blue: #3C5AFF;
-  
+
   /* Typography */
   font-family: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', monospace;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
   letter-spacing: -0.01em;
 }
 
 body {
-  background-color: var(--concrete-light);
-  color: var(--carbon-black);
+  background-color: var(--carbon-black);
+  color: var(--pure-white);
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+/* Utility Classes */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.text-subtle {
+  color: #888888;
 }
 
 /* Button Styles */
 .btn-primary {
-  background-color: var(--steel-blue);
-  color: var(--pure-white);
-  font-weight: 700;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.125rem;
-  border: none;
+  background-color: var(--pure-white);
+  color: var(--carbon-black);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  border: 1px solid var(--pure-white);
+  border-radius: 0;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -83,21 +109,22 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .btn-primary:hover {
-  background-color: #2A48CC; /* Darker Steel Blue */
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(60, 90, 255, 0.3);
+  background-color: transparent;
+  color: var(--pure-white);
 }
 
 .btn-secondary {
   background-color: transparent;
   color: var(--pure-white);
-  font-weight: 700;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.125rem;
-  border: 2px solid var(--pure-white);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -105,69 +132,39 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .btn-secondary:hover {
-  background-color: var(--pure-white);
-  color: var(--carbon-black);
+  border-color: var(--pure-white);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* Card Styles */
 .card {
-  background-color: var(--graphite-gray);
-  padding: 2rem;
-  border-radius: 0.125rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-color: var(--pure-white);
 }
 
 /* Section Backgrounds */
-.bg-dark {
+.bg-black {
   background-color: var(--carbon-black);
-  color: var(--pure-white);
 }
 
-.bg-light {
-  background-color: var(--concrete-light);
-  color: var(--carbon-black);
-}
-
-.bg-graphite {
-  background-color: var(--graphite-gray);
-  color: var(--pure-white);
+.bg-off-black {
+  background-color: var(--off-black);
 }
 
 /* Hero Section */
-.hero-gradient {
-  background: linear-gradient(135deg, var(--carbon-black) 0%, var(--graphite-gray) 100%);
-}
-
-/* Utility Classes */
-
-
-
-
-.border-blue {
-  border-color: var(--steel-blue);
-}
-
-/* Animations */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-.float-animation {
-  animation: float 6s ease-in-out infinite;
+.hero-minimal {
+  background-color: var(--carbon-black);
+  position: relative;
 }
 
 /* Smooth Scroll */
@@ -179,10 +176,15 @@ html {
 a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 a:hover {
-  color: var(--steel-blue);
+  opacity: 0.7;
 }
 
+/* Custom Selection */
+::selection {
+  background: var(--pure-white);
+  color: var(--carbon-black);
+}

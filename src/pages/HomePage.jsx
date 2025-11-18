@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Shield, Zap, Globe, Plane, Waves } from 'lucide-react'
+import { ArrowRight, Shield, Zap, Globe, Plane, Waves, Target, Radio, Crosshair, Cpu, Eye, Lock } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 import Hls from 'hls.js'
 import SEO from '../components/SEO'
@@ -17,7 +17,7 @@ const HomePage = () => {
       const hls = new Hls()
       hls.loadSource(videoSrc)
       hls.attachMedia(video)
-      
+
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         video.play().catch(console.error)
       })
@@ -58,50 +58,51 @@ const HomePage = () => {
 
   return (
     <>
-      <SEO 
-        title="ARGUS - Wearable Intelligence Built for Frontline Workers"
-        description="Rugged smart glasses powered by on-device AI models that deliver real-time insights, hands-free. Empower your workforce with vision intelligence that works anywhere."
-        keywords="wearable intelligence, smart glasses, on-device AI, frontline workers, vision intelligence, rugged smart glasses, real-time insights, hands-free technology"
+      <SEO
+        title="ARGUS - Artificial Intelligence for Defense"
+        description="Software-defined defense. Protecting democracies with autonomous systems and real-time intelligence."
+        keywords="defense AI, autonomous systems, software-defined defense, national security, artificial intelligence"
         image="https://argus.global/images/argus-logo-updated.png"
         url="https://argus.global/"
       />
-      <div style={{ backgroundColor: 'var(--concrete-light)' }}>
-      <section className="hero-gradient text-pure-white py-32" style={{ background: 'linear-gradient(135deg, var(--carbon-black) 0%, var(--graphite-gray) 100%)', color: 'var(--pure-white)' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="inline-block mb-6 px-6 py-2 rounded-sm" style={{ backgroundColor: 'var(--graphite-gray)', border: '1px solid rgba(255, 255, 255, 0.1)' }}>
-              <span className="text-sm font-bold tracking-wide">NEXT-GENERATION WEARABLE INTELLIGENCE</span>
-            </div>
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
-              Wearable Intelligence.<br />Built for Frontline Intelligence.
+      <div className="bg-black min-h-screen font-sans text-white selection:bg-white selection:text-black">
+
+        {/* Hero Section */}
+        <section className="hero-minimal relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+          <div className="absolute inset-0 z-0">
+            {/* Abstract geometric background could go here, for now just pure black */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-900/20 via-black to-black"></div>
+          </div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 className="text-5xl md:text-7xl lg:text-9xl font-medium mb-8 tracking-tighter leading-tight">
+              Artificial Intelligence<br />
+              <span className="text-subtle">to Protect Democracies</span>
             </h1>
-            <p className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-              Rugged smart glasses powered by on-device AI models that deliver real-time insights, hands-free. Empower your workforce with vision intelligence that works anywhere.
+
+            <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed text-gray-400 font-light">
+              We provide AI-enabled precision mass and autonomous systems across defense and security.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link to="/products" className="btn-primary">
-                <span>Explore Devices & AI</span>
-                <ArrowRight className="ml-2 h-5 w-5" />
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Link to="/products" className="btn-primary group">
+                <span>Our Capabilities</span>
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link to="/company" className="btn-secondary">
-                Schedule a Demo
+              <Link to="/company" className="btn-secondary group">
+                <span>Mission & Values</span>
               </Link>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-
-
-      {/* Video Section */}
-      <section className="w-full bg-carbon-black py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-5xl font-bold mb-10 text-center text-pure-white">See Argus in Action</h2>
-          <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+        {/* Cinematic Video Section */}
+        <section className="w-full bg-black relative">
+          <div className="w-full h-[80vh] relative overflow-hidden">
             <video
               ref={videoRef}
-              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
-              controls
+              className="w-full h-full object-cover opacity-60 grayscale"
+              controls={false}
               muted
               loop
               playsInline
@@ -110,137 +111,131 @@ const HomePage = () => {
             >
               Your browser does not support the video tag.
             </video>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24" style={{ backgroundColor: 'var(--concrete-light)' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold mb-2" style={{ color: 'var(--steel-blue)' }}>100%</div>
-              <p className="text-sm font-medium" style={{ color: 'var(--graphite-gray)' }}>Open Source</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2" style={{ color: 'var(--steel-blue)' }}>5+</div>
-              <p className="text-sm font-medium" style={{ color: 'var(--graphite-gray)' }}>Industries Served</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2" style={{ color: 'var(--steel-blue)' }}>24/7</div>
-              <p className="text-sm font-medium" style={{ color: 'var(--graphite-gray)' }}>Hands-Free Operation</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2" style={{ color: 'var(--steel-blue)' }}>∞</div>
-              <p className="text-sm font-medium" style={{ color: 'var(--graphite-gray)' }}>Custom Applications</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black pointer-events-none"></div>
+            <div className="absolute bottom-10 left-10 z-20">
+              <p className="text-xs font-mono text-gray-500 tracking-widest uppercase">Live System Feed // Anonymized</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="py-24" style={{ backgroundColor: 'var(--concrete-light)' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6" style={{ color: 'var(--carbon-black)' }}>
-            The Open Alternative to <span style={{ color: 'var(--steel-blue)' }}>Meta Ray-Ban</span>            </h2>
-            <p className="text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--graphite-gray)' }}>
-              Break free from closed ecosystems. Argus Systems delivers enterprise-grade smart glasses with complete transparency, customization, and community control.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="card">
-              <div className="w-16 h-16 rounded-sm flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--steel-blue)' }}>
-                <Shield className="h-8 w-8" style={{ color: 'var(--pure-white)' }} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--pure-white)' }}>Open & Secure</h3>
-              <p className="leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-                Fully open-source platform built for defense and public safety. Complete transparency with privacy and compliance by design.
-              </p>
-            </div>
-
-            <div className="card">
-              <div className="w-16 h-16 rounded-sm flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--steel-blue)' }}>
-                <Zap className="h-8 w-8" style={{ color: 'var(--pure-white)' }} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--pure-white)' }}>Composable & Customizable</h3>
-              <p className="leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-                Build custom applications tailored to your needs. Developers can create mission-critical solutions without vendor lock-in.
-              </p>
-            </div>
-
-            <div className="card">
-              <div className="w-16 h-16 rounded-sm flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--steel-blue)' }}>
-                <Globe className="h-8 w-8" style={{ color: 'var(--pure-white)' }} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--pure-white)' }}>Community-Driven Innovation</h3>
-              <p className="leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-                Join a global community building the future of visual intelligence. Access growing ecosystem of open-source applications.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 bg-dark text-pure-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-block mb-4 px-4 py-1 rounded-sm" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)', border: '1px solid rgba(60, 90, 255, 0.3)' }}>
-                <span className="text-sm font-semibold" style={{ color: 'var(--steel-blue)' }}>EXTENDED VISION</span>
-              </div>
-              <h2 className="text-5xl font-bold mb-6">Autonomous Drones & USV</h2>
-              <p className="text-xl mb-8 leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-                Extend your operational reach with the Argus Drone and USV Aqua Rover. Seamlessly integrated with Argus Smart Glasses for a complete autonomous visual intelligence network.
-              </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center">
-                  <div className="w-8 h-8 rounded-sm flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)' }}>
-                    <Plane className="h-4 w-4" style={{ color: 'var(--steel-blue)' }} />
-                  </div>
-                  <span style={{ color: 'var(--concrete-light)' }}>Autonomous Aerial Inspection</span>
+        {/* Strategic Pillars */}
+        <section className="py-32 bg-black border-t border-white/10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-3 gap-16">
+              <div className="card group">
+                <div className="mb-8">
+                  <Cpu className="h-8 w-8 text-white mb-4" strokeWidth={1} />
+                  <h3 className="text-2xl font-medium mb-4 text-white">Software-Defined</h3>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-8 h-8 rounded-sm flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)' }}>
-                    <Waves className="h-4 w-4" style={{ color: 'var(--steel-blue)' }} />
-                  </div>
-                  <span style={{ color: 'var(--concrete-light)' }}>Marine & Waterway Monitoring</span>
-                </div>
+                <p className="leading-relaxed text-gray-400 text-lg font-light">
+                  Hardware is a commodity. Intelligence is the differentiator. We retrofit existing platforms with state-of-the-art AI to extend their operational relevance.
+                </p>
               </div>
-              <Link to="/drones" className="btn-primary">
-                <span>Explore Autonomous Vehicles</span>
-                <ArrowRight className="ml-2 h-5 w-5" />
+
+              <div className="card group">
+                <div className="mb-8">
+                  <Eye className="h-8 w-8 text-white mb-4" strokeWidth={1} />
+                  <h3 className="text-2xl font-medium mb-4 text-white">Information Superiority</h3>
+                </div>
+                <p className="leading-relaxed text-gray-400 text-lg font-light">
+                  In the modern battlespace, data is the weapon. Our systems process sensor data on-device, delivering real-time situational awareness without latency.
+                </p>
+              </div>
+
+              <div className="card group">
+                <div className="mb-8">
+                  <Lock className="h-8 w-8 text-white mb-4" strokeWidth={1} />
+                  <h3 className="text-2xl font-medium mb-4 text-white">Sovereign & Secure</h3>
+                </div>
+                <p className="leading-relaxed text-gray-400 text-lg font-light">
+                  Built on open standards for complete transparency. We ensure that critical defense infrastructure remains under sovereign control, free from black boxes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Minimalist Stats */}
+        <section className="py-32 bg-off-black">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-12 border-t border-white/10 pt-12">
+              <div>
+                <div className="text-5xl font-light mb-2 text-white">100%</div>
+                <p className="text-xs font-mono text-gray-500 uppercase tracking-widest">Open Architecture</p>
+              </div>
+              <div>
+                <div className="text-5xl font-light mb-2 text-white">5+</div>
+                <p className="text-xs font-mono text-gray-500 uppercase tracking-widest">Nations Supported</p>
+              </div>
+              <div>
+                <div className="text-5xl font-light mb-2 text-white">24/7</div>
+                <p className="text-xs font-mono text-gray-500 uppercase tracking-widest">Autonomous Ops</p>
+              </div>
+              <div>
+                <div className="text-5xl font-light mb-2 text-white">∞</div>
+                <p className="text-xs font-mono text-gray-500 uppercase tracking-widest">Scalability</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Autonomous Assets Section */}
+        <section className="py-32 bg-black relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="flex flex-col md:flex-row justify-between items-end mb-20">
+              <h2 className="text-4xl md:text-6xl font-medium tracking-tight max-w-xl">
+                Autonomous Systems for Multi-Domain Operations
+              </h2>
+              <Link to="/drones" className="btn-secondary mt-8 md:mt-0">
+                View Platforms
               </Link>
             </div>
-            <div className="relative flex justify-center items-center">
-              <div className="p-8 rounded-sm w-full max-w-md" style={{ backgroundColor: 'var(--graphite-gray)', border: '1px solid #2A2E34' }}>
-                <div className="flex items-center justify-center h-64 text-6xl gap-8" style={{ color: 'var(--steel-blue)' }}>
-                  <Plane className="float-animation" size={80} />
-                  <Waves className="float-animation" size={80} style={{ animationDelay: '1s' }} />
+
+            <div className="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10">
+              <div className="bg-black p-12 hover:bg-white/5 transition-colors duration-500 group cursor-pointer">
+                <div className="flex justify-between items-start mb-12">
+                  <Plane className="h-6 w-6 text-gray-500 group-hover:text-white transition-colors" strokeWidth={1} />
+                  <ArrowRight className="h-5 w-5 text-gray-500 group-hover:text-white -rotate-45 group-hover:rotate-0 transition-all duration-300" />
                 </div>
+                <h3 className="text-3xl font-medium mb-4">Air Superiority</h3>
+                <p className="text-gray-400 font-light">
+                  AI-enabled air dominance. Our software stack transforms legacy airframes and next-gen drones into cognitive assets capable of autonomous decision-making in GPS-denied environments.
+                </p>
+              </div>
+
+              <div className="bg-black p-12 hover:bg-white/5 transition-colors duration-500 group cursor-pointer">
+                <div className="flex justify-between items-start mb-12">
+                  <Waves className="h-6 w-6 text-gray-500 group-hover:text-white transition-colors" strokeWidth={1} />
+                  <ArrowRight className="h-5 w-5 text-gray-500 group-hover:text-white -rotate-45 group-hover:rotate-0 transition-all duration-300" />
+                </div>
+                <h3 className="text-3xl font-medium mb-4">Maritime Intelligence</h3>
+                <p className="text-gray-400 font-light">
+                  Deploying neural networks at the edge to secure sovereign waters. From autonomous surface vessels to deep-sea monitoring, ensuring continuous situational awareness.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="py-24 text-pure-white" style={{ backgroundColor: 'var(--carbon-black)', color: 'var(--pure-white)' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-5xl font-bold mb-6">
-            Ready to Transform Your Operations?
-          </h2>
-          <p className="text-xl mb-10 leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-            Join the open-source revolution in visual intelligence. Experience the power of hands-free technology with complete control and transparency.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link to="/company" className="btn-primary">
-              Request a Demo
-            </Link>
-            <Link to="/products" className="btn-secondary">
-              Explore Products
-            </Link>
+        {/* CTA Section */}
+        <section className="py-32 bg-black text-white border-t border-white/10">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl md:text-5xl font-medium mb-8 tracking-tight">
+              Join the Mission
+            </h2>
+            <p className="text-xl mb-12 leading-relaxed text-gray-400 font-light max-w-2xl mx-auto">
+              We are looking for engineers and operators who share our conviction that democratic values are worth protecting.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Link to="/company" className="btn-primary">
+                View Open Roles
+              </Link>
+              <Link to="/products" className="btn-secondary">
+                Contact Sales
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
     </>
   )
