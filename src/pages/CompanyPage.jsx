@@ -7,8 +7,8 @@ const CompanyPage = () => {
     <>
       <SEO
         title="ARGUS Mission - Protecting Democracies"
-        description="We are a defense technology company dedicated to protecting democratic values through superior artificial intelligence and autonomous systems."
-        keywords="defense mission, protecting democracies, AI ethics, national security, defense technology company"
+        description="We are a defense technology company providing AI-enabled precision mass and autonomous systems to protect democratic values."
+        keywords="defense mission, protecting democracies, precision mass, AI ethics, national security, defense technology"
         image="https://argus.global/images/argus-logo-updated.png"
         url="https://argus.global/company"
       />

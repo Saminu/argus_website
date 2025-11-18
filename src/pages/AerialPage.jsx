@@ -7,8 +7,8 @@ const AerialPage = () => {
         <>
             <SEO
                 title="ARGUS Aerial Systems - Ghost-V4 UAS"
-                description="Autonomous aerial systems for defense. Ghost-V4 UAS provides deep sensing, electronic warfare capabilities, and autonomous swarming."
-                keywords="autonomous drones, UAS, UAV, defense drones, swarming drones, electronic warfare"
+                description="Autonomous aerial systems for defense. Ghost-V4 UAS provides deep sensing, electronic warfare capabilities, and precision mass swarming."
+                keywords="autonomous drones, UAS, UAV, defense drones, swarming drones, precision mass, electronic warfare"
                 image="https://argus.global/images/argus-logo-updated.png"
                 url="https://argus.global/aerial"
             />

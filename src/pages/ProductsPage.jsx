@@ -6,9 +6,9 @@ const ProductsPage = () => {
   return (
     <>
       <SEO
-        title="ARGUS Capabilities - Software-Defined Defense"
-        description="Our software-defined defense capabilities. Edge intelligence, autonomous systems, and sovereign cloud infrastructure."
-        keywords="defense AI, edge computing, autonomous systems, sovereign cloud, defense software"
+        title="ARGUS Capabilities - Precision Mass & Software-Defined Defense"
+        description="Our capabilities in AI-enabled precision mass and software-defined defense. Edge intelligence, autonomous swarms, and sovereign cloud infrastructure."
+        keywords="precision mass, defense AI, edge computing, autonomous swarms, sovereign cloud, defense software"
         image="https://argus.global/images/argus-logo-updated.png"
         url="https://argus.global/products"
       />

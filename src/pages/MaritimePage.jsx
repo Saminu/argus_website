@@ -7,8 +7,8 @@ const MaritimePage = () => {
         <>
             <SEO
                 title="ARGUS Maritime Systems - Triton USV"
-                description="Autonomous maritime systems for defense. Triton USV provides littoral surveillance, mine countermeasures, and autonomous naval operations."
-                keywords="USV, unmanned surface vehicle, naval drones, maritime security, autonomous boats"
+                description="Autonomous maritime systems for defense. Triton USV provides littoral surveillance, mine countermeasures, and precision mass naval operations."
+                keywords="USV, unmanned surface vehicle, naval drones, maritime security, autonomous boats, precision mass"
                 image="https://argus.global/images/argus-logo-updated.png"
                 url="https://argus.global/maritime"
             />

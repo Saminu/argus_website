@@ -19,7 +19,7 @@ const HomePage = () => {
       hls.attachMedia(video)
 
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.play().catch(console.error)
+        video.play().catch(e => console.log('Auto-play prevented:', e))
       })
 
       hls.on(Hls.Events.ERROR, (event, data) => {
@@ -59,9 +59,9 @@ const HomePage = () => {
   return (
     <>
       <SEO
-        title="ARGUS - Artificial Intelligence for Defense"
-        description="Software-defined defense. Protecting democracies with autonomous systems and real-time intelligence."
-        keywords="defense AI, autonomous systems, software-defined defense, national security, artificial intelligence"
+        title="ARGUS - AI-Enabled Precision Mass & Autonomous Systems"
+        description="We provide AI-enabled precision mass and autonomous systems across defense and security. Building the operating system for the modern battlefield."
+        keywords="defense AI, precision mass, autonomous systems, defense technology, AI security, software-defined defense"
         image="https://argus.global/images/argus-logo-updated.png"
         url="https://argus.global/"
       />
