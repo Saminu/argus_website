@@ -11,6 +11,7 @@ import OilGasPage from './pages/OilGasPage'
 import WarehousingPage from './pages/WarehousingPage'
 import ManufacturingPage from './pages/ManufacturingPage'
 import HealthcarePage from './pages/HealthcarePage'
+import DronePage from './pages/DronePage'
 import './App.css'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/solutions/manufacturing" element={<ManufacturingPage />} />
             <Route path="/solutions/healthcare" element={<HealthcarePage />} />
             <Route path="/products" element={<ProductsPage />} />
+            <Route path="/drones" element={<DronePage />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/company" element={<CompanyPage />} />
           </Routes>

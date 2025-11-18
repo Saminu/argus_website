@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Shield, Zap, Globe } from 'lucide-react'
+import { ArrowRight, Shield, Zap, Globe, Plane, Waves } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 import Hls from 'hls.js'
 import SEO from '../components/SEO'
@@ -73,7 +73,7 @@ const HomePage = () => {
               <span className="text-sm font-bold tracking-wide">NEXT-GENERATION WEARABLE INTELLIGENCE</span>
             </div>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
-              Wearable Intelligence.<br />Built for Frontline Workers.
+              Wearable Intelligence.<br />Built for Frontline Intelligence.
             </h1>
             <p className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
               Rugged smart glasses powered by on-device AI models that deliver real-time insights, hands-free. Empower your workforce with vision intelligence that works anywhere.
@@ -176,6 +176,48 @@ const HomePage = () => {
               <p className="leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
                 Join a global community building the future of visual intelligence. Access growing ecosystem of open-source applications.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-dark text-pure-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="inline-block mb-4 px-4 py-1 rounded-sm" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)', border: '1px solid rgba(60, 90, 255, 0.3)' }}>
+                <span className="text-sm font-semibold" style={{ color: 'var(--steel-blue)' }}>EXTENDED VISION</span>
+              </div>
+              <h2 className="text-5xl font-bold mb-6">Autonomous Drones & USV</h2>
+              <p className="text-xl mb-8 leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
+                Extend your operational reach with the Argus Drone and USV Aqua Rover. Seamlessly integrated with Argus Smart Glasses for a complete autonomous visual intelligence network.
+              </p>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center">
+                  <div className="w-8 h-8 rounded-sm flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)' }}>
+                    <Plane className="h-4 w-4" style={{ color: 'var(--steel-blue)' }} />
+                  </div>
+                  <span style={{ color: 'var(--concrete-light)' }}>Autonomous Aerial Inspection</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-8 h-8 rounded-sm flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(60, 90, 255, 0.2)' }}>
+                    <Waves className="h-4 w-4" style={{ color: 'var(--steel-blue)' }} />
+                  </div>
+                  <span style={{ color: 'var(--concrete-light)' }}>Marine & Waterway Monitoring</span>
+                </div>
+              </div>
+              <Link to="/drones" className="btn-primary">
+                <span>Explore Autonomous Vehicles</span>
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </div>
+            <div className="relative flex justify-center items-center">
+              <div className="p-8 rounded-sm w-full max-w-md" style={{ backgroundColor: 'var(--graphite-gray)', border: '1px solid #2A2E34' }}>
+                <div className="flex items-center justify-center h-64 text-6xl gap-8" style={{ color: 'var(--steel-blue)' }}>
+                  <Plane className="float-animation" size={80} />
+                  <Waves className="float-animation" size={80} style={{ animationDelay: '1s' }} />
+                </div>
+              </div>
             </div>
           </div>
         </div>
