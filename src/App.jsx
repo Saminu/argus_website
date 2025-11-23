@@ -12,6 +12,7 @@ import WarehousingPage from './pages/WarehousingPage'
 import ManufacturingPage from './pages/ManufacturingPage'
 import HealthcarePage from './pages/HealthcarePage'
 import AerialPage from './pages/AerialPage'
+import FleetDetailsPage from './pages/FleetDetailsPage'
 import MaritimePage from './pages/MaritimePage'
 import ScrollToTop from './components/ScrollToTop'
 import './App.css'
@@ -33,6 +34,7 @@ function App() {
             <Route path="/solutions/healthcare" element={<HealthcarePage />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/aerial" element={<AerialPage />} />
+            <Route path="/aerial/:fleetId" element={<FleetDetailsPage />} />
             <Route path="/maritime" element={<MaritimePage />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/company" element={<CompanyPage />} />

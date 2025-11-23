@@ -32,47 +32,76 @@ const AerialPage = () => {
                     </div>
                 </section>
 
-                {/* Main Product: Ghost-V4 */}
+                {/* Aerial Fleets Grid */}
                 <section className="py-32 border-b border-white/10">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid md:grid-cols-2 gap-24 items-center">
-                            <div className="relative h-full min-h-[500px] bg-gray-900 border border-white/10 flex items-center justify-center overflow-hidden">
-                                {/* Abstract Drone Visualization */}
-                                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-800/50 via-black to-black"></div>
-                                <div className="relative z-10">
-                                    <Plane className="h-48 w-48 text-white opacity-90" strokeWidth={0.5} />
-                                </div>
-                                <div className="absolute top-8 right-8 text-xs font-mono text-white tracking-widest text-right">
-                                    MODEL: GHOST-V4<br />
-                                    STATUS: COMBAT_READY
-                                </div>
-                            </div>
+                        <div className="text-center mb-20">
+                            <h2 className="text-4xl md:text-5xl font-medium mb-6 tracking-tight">Aerial Systems</h2>
+                            <p className="text-xl text-gray-400 font-light max-w-2xl mx-auto">
+                                Next-generation autonomous platforms for every mission profile.
+                            </p>
+                        </div>
 
-                            <div>
-                                <h2 className="text-4xl md:text-5xl font-medium mb-8 tracking-tight">Ghost-V4 UAS</h2>
-                                <p className="text-xl text-gray-400 font-light leading-relaxed mb-12">
-                                    A low-observable, long-endurance unmanned aerial system designed for deep sensing and electronic warfare. Capable of autonomous swarming and collaborative engagement.
-                                </p>
-
-                                <div className="space-y-8 font-mono text-sm">
-                                    <div className="flex justify-between border-b border-white/10 pb-4">
-                                        <span className="text-gray-500">ENDURANCE</span>
-                                        <span>12+ HOURS</span>
+                        <div className="grid md:grid-cols-2 gap-8">
+                            {/* SkyMako */}
+                            <Link to="/aerial/skymako" className="group relative bg-zinc-900 border border-white/10 overflow-hidden hover:border-white/30 transition-colors duration-300 min-h-[400px] flex flex-col">
+                                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
+                                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
+                                <div className="relative z-20 p-8 mt-auto">
+                                    <div className="inline-block px-3 py-1 mb-4 border border-white/20 rounded-full bg-black/50 backdrop-blur-sm text-xs font-mono tracking-wider text-blue-400">
+                                        SCOUT / ANTI-INTERFERENCE
                                     </div>
-                                    <div className="flex justify-between border-b border-white/10 pb-4">
-                                        <span className="text-gray-500">RANGE</span>
-                                        <span>150 KM</span>
-                                    </div>
-                                    <div className="flex justify-between border-b border-white/10 pb-4">
-                                        <span className="text-gray-500">PAYLOAD</span>
-                                        <span>EO/IR + EW SUITE</span>
-                                    </div>
-                                    <div className="flex justify-between border-b border-white/10 pb-4">
-                                        <span className="text-gray-500">COMMS</span>
-                                        <span>SATCOM / MESH / SILENT</span>
-                                    </div>
+                                    <h3 className="text-3xl font-bold mb-2 group-hover:text-blue-400 transition-colors">SkyMako™ Ghost-Ray 260</h3>
+                                    <p className="text-gray-300 font-light line-clamp-2">
+                                        Silent. Hover. Strike. The Apex Predator of the Skies.
+                                    </p>
                                 </div>
-                            </div>
+                            </Link>
+
+                            {/* Barracuda */}
+                            <Link to="/aerial/barracuda" className="group relative bg-zinc-900 border border-white/10 overflow-hidden hover:border-white/30 transition-colors duration-300 min-h-[400px] flex flex-col">
+                                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
+                                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506947411487-a56738267384?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
+                                <div className="relative z-20 p-8 mt-auto">
+                                    <div className="inline-block px-3 py-1 mb-4 border border-white/20 rounded-full bg-black/50 backdrop-blur-sm text-xs font-mono tracking-wider text-blue-400">
+                                        RAPID DEPLOYMENT
+                                    </div>
+                                    <h3 className="text-3xl font-bold mb-2 group-hover:text-blue-400 transition-colors">Barracuda 260 "Switchblade"</h3>
+                                    <p className="text-gray-300 font-light line-clamp-2">
+                                        Unfold. Launch. Dominate. The Pocket-Sized Powerhouse.
+                                    </p>
+                                </div>
+                            </Link>
+
+                            {/* Leviathan */}
+                            <Link to="/aerial/leviathan" className="group relative bg-zinc-900 border border-white/10 overflow-hidden hover:border-white/30 transition-colors duration-300 min-h-[400px] flex flex-col">
+                                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
+                                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
+                                <div className="relative z-20 p-8 mt-auto">
+                                    <div className="inline-block px-3 py-1 mb-4 border border-white/20 rounded-full bg-black/50 backdrop-blur-sm text-xs font-mono tracking-wider text-blue-400">
+                                        HEAVY LIFT
+                                    </div>
+                                    <h3 className="text-3xl font-bold mb-2 group-hover:text-blue-400 transition-colors">Leviathan X8</h3>
+                                    <p className="text-gray-300 font-light line-clamp-2">
+                                        Gravity is just a suggestion. Lift Heavy. Fly Anywhere.
+                                    </p>
+                                </div>
+                            </Link>
+
+                            {/* Orca Pod */}
+                            <Link to="/aerial/orca" className="group relative bg-zinc-900 border border-white/10 overflow-hidden hover:border-white/30 transition-colors duration-300 min-h-[400px] flex flex-col">
+                                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
+                                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1579829366248-204fe8413f31?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
+                                <div className="relative z-20 p-8 mt-auto">
+                                    <div className="inline-block px-3 py-1 mb-4 border border-white/20 rounded-full bg-black/50 backdrop-blur-sm text-xs font-mono tracking-wider text-blue-400">
+                                        AUTONOMOUS SENTINEL
+                                    </div>
+                                    <h3 className="text-3xl font-bold mb-2 group-hover:text-blue-400 transition-colors">Orca Pod</h3>
+                                    <p className="text-gray-300 font-light line-clamp-2">
+                                        The Pilot is Optional. The Mission is Permanent.
+                                    </p>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
