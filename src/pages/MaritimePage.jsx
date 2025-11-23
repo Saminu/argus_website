@@ -32,47 +32,55 @@ const MaritimePage = () => {
                     </div>
                 </section>
 
-                {/* Main Product: Triton USV */}
+                {/* Maritime Fleets Grid */}
+                {/* Maritime Fleets Grid */}
                 <section className="py-32 border-b border-white/10">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid md:grid-cols-2 gap-24 items-center">
-                            <div>
-                                <h2 className="text-4xl md:text-5xl font-medium mb-8 tracking-tight">Triton USV</h2>
-                                <p className="text-xl text-gray-400 font-light leading-relaxed mb-12">
-                                    Autonomous surface vessel for littoral surveillance and mine countermeasures. Modular payload bay allows for rapid reconfiguration between ISR and kinetic missions.
-                                </p>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {/* Hammerhead USV */}
+                            <Link to="/maritime/hammerhead" className="group relative bg-zinc-900 border border-white/10 overflow-hidden hover:border-white/30 transition-colors duration-300 min-h-[500px] flex flex-col">
+                                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
+                                <div className="absolute inset-0 bg-[url('/images/fleets/hammerhead/hammerhead-1.png')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
+                                <div className="relative z-20 p-8 mt-auto">
+                                    <div className="inline-block px-3 py-1 mb-4 border border-white/20 rounded-full bg-black/50 backdrop-blur-sm text-xs font-mono tracking-wider text-blue-400">
+                                        HYDROGRAPHIC SURVEY
+                                    </div>
+                                    <h3 className="text-3xl font-bold mb-2 group-hover:text-blue-400 transition-colors">The Hammerhead USV</h3>
+                                    <p className="text-gray-300 font-light line-clamp-2">
+                                        The Surface is Just the Beginning. See What Lies Beneath.
+                                    </p>
+                                </div>
+                            </Link>
 
-                                <div className="space-y-8 font-mono text-sm">
-                                    <div className="flex justify-between border-b border-white/10 pb-4">
-                                        <span className="text-gray-500">AUTONOMY</span>
-                                        <span>LEVEL 4</span>
+                            {/* Piranha Scout */}
+                            <Link to="/maritime/piranha" className="group relative bg-zinc-900 border border-white/10 overflow-hidden hover:border-white/30 transition-colors duration-300 min-h-[500px] flex flex-col">
+                                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
+                                <div className="absolute inset-0 bg-[url('/images/fleets/piranha/piranha-1.png')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
+                                <div className="relative z-20 p-8 mt-auto">
+                                    <div className="inline-block px-3 py-1 mb-4 border border-white/20 rounded-full bg-black/50 backdrop-blur-sm text-xs font-mono tracking-wider text-blue-400">
+                                        ULTRA-PORTABLE USV
                                     </div>
-                                    <div className="flex justify-between border-b border-white/10 pb-4">
-                                        <span className="text-gray-500">SPEED</span>
-                                        <span>45 KNOTS</span>
-                                    </div>
-                                    <div className="flex justify-between border-b border-white/10 pb-4">
-                                        <span className="text-gray-500">SIGNATURE</span>
-                                        <span>LOW RCS / ACOUSTIC</span>
-                                    </div>
-                                    <div className="flex justify-between border-b border-white/10 pb-4">
-                                        <span className="text-gray-500">OPERATIONS</span>
-                                        <span>SEA STATE 5</span>
-                                    </div>
+                                    <h3 className="text-3xl font-bold mb-2 group-hover:text-blue-400 transition-colors">The Piranha Scout</h3>
+                                    <p className="text-gray-300 font-light line-clamp-2">
+                                        Small. Agile. Voracious for Data.
+                                    </p>
                                 </div>
-                            </div>
+                            </Link>
 
-                            <div className="relative h-full min-h-[500px] bg-gray-900 border border-white/10 flex items-center justify-center overflow-hidden">
-                                {/* Abstract USV Visualization */}
-                                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-800/50 via-black to-black"></div>
-                                <div className="relative z-10">
-                                    <Waves className="h-48 w-48 text-white opacity-90" strokeWidth={0.5} />
+                            {/* Mantis X6 ROV */}
+                            <Link to="/maritime/mantis" className="group relative bg-zinc-900 border border-white/10 overflow-hidden hover:border-white/30 transition-colors duration-300 min-h-[500px] flex flex-col">
+                                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
+                                <div className="absolute inset-0 bg-[url('/images/fleets/mantis/mantis-1.png')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
+                                <div className="relative z-20 p-8 mt-auto">
+                                    <div className="inline-block px-3 py-1 mb-4 border border-white/20 rounded-full bg-black/50 backdrop-blur-sm text-xs font-mono tracking-wider text-blue-400">
+                                        DEEP-SEA ROV
+                                    </div>
+                                    <h3 className="text-3xl font-bold mb-2 group-hover:text-blue-400 transition-colors">The Mantis X6</h3>
+                                    <p className="text-gray-300 font-light line-clamp-2">
+                                        Pressure is Irrelevant. Descend. Inspect. Recover.
+                                    </p>
                                 </div>
-                                <div className="absolute bottom-8 left-8 text-xs font-mono text-white tracking-widest">
-                                    VESSEL: TRITON-X<br />
-                                    SONAR: ACTIVE
-                                </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -97,16 +105,16 @@ const MaritimePage = () => {
                             </div>
                             <div className="card group">
                                 <Activity className="h-8 w-8 text-white mb-6" strokeWidth={1} />
-                                <h3 className="text-xl font-medium mb-4">Acoustic Monitoring</h3>
+                                <h3 className="text-xl font-medium mb-4">Precision Hydrography</h3>
                                 <p className="text-gray-400 font-light leading-relaxed text-sm">
-                                    Advanced sonar arrays for submarine detection and tracking.
+                                    Ultra-shallow to deep-sea mapping capabilities using multi-beam echo sounders.
                                 </p>
                             </div>
                             <div className="card group">
                                 <Anchor className="h-8 w-8 text-white mb-6" strokeWidth={1} />
-                                <h3 className="text-xl font-medium mb-4">Mine Countermeasures</h3>
+                                <h3 className="text-xl font-medium mb-4">Subsea Intervention</h3>
                                 <p className="text-gray-400 font-light leading-relaxed text-sm">
-                                    Autonomous detection and neutralization of naval mines.
+                                    Dexterous manipulation and recovery operations at depth with the Mantis ROV.
                                 </p>
                             </div>
                         </div>

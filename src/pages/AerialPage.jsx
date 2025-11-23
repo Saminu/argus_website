@@ -26,7 +26,7 @@ const AerialPage = () => {
                                 <span className="text-gray-500">Superiority.</span>
                             </h1>
                             <p className="text-xl md:text-2xl mb-12 max-w-2xl leading-relaxed text-gray-400 font-light">
-                                AI-enabled air dominance. Our software stack transforms legacy airframes and next-gen drones into cognitive assets capable of autonomous decision-making in GPS-denied environments.
+                                AI-enabled air dominance. Hardware-Defined, Software-Enabled. Our platforms transform next-gen drones into cognitive assets capable of autonomous decision-making in GPS-denied environments.
                             </p>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ const AerialPage = () => {
                             {/* SkyMako */}
                             <Link to="/aerial/skymako" className="group relative bg-zinc-900 border border-white/10 overflow-hidden hover:border-white/30 transition-colors duration-300 min-h-[400px] flex flex-col">
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
-                                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
+                                <div className="absolute inset-0 bg-[url('/images/fleets/skymako/skymako-1.png')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
                                 <div className="relative z-20 p-8 mt-auto">
                                     <div className="inline-block px-3 py-1 mb-4 border border-white/20 rounded-full bg-black/50 backdrop-blur-sm text-xs font-mono tracking-wider text-blue-400">
                                         SCOUT / ANTI-INTERFERENCE
@@ -76,7 +76,7 @@ const AerialPage = () => {
                             {/* Leviathan */}
                             <Link to="/aerial/leviathan" className="group relative bg-zinc-900 border border-white/10 overflow-hidden hover:border-white/30 transition-colors duration-300 min-h-[400px] flex flex-col">
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
-                                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
+                                <div className="absolute inset-0 bg-[url('/images/fleets/leviathan/leviathan-1.png')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
                                 <div className="relative z-20 p-8 mt-auto">
                                     <div className="inline-block px-3 py-1 mb-4 border border-white/20 rounded-full bg-black/50 backdrop-blur-sm text-xs font-mono tracking-wider text-blue-400">
                                         HEAVY LIFT
@@ -91,7 +91,7 @@ const AerialPage = () => {
                             {/* Orca Pod */}
                             <Link to="/aerial/orca" className="group relative bg-zinc-900 border border-white/10 overflow-hidden hover:border-white/30 transition-colors duration-300 min-h-[400px] flex flex-col">
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
-                                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1579829366248-204fe8413f31?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
+                                <div className="absolute inset-0 bg-[url('/images/fleets/orca/orca-1.png')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
                                 <div className="relative z-20 p-8 mt-auto">
                                     <div className="inline-block px-3 py-1 mb-4 border border-white/20 rounded-full bg-black/50 backdrop-blur-sm text-xs font-mono tracking-wider text-blue-400">
                                         AUTONOMOUS SENTINEL
@@ -121,7 +121,7 @@ const AerialPage = () => {
                                 <Target className="h-8 w-8 text-white mb-6" strokeWidth={1} />
                                 <h3 className="text-xl font-medium mb-4">Swarm Logic</h3>
                                 <p className="text-gray-400 font-light leading-relaxed text-sm">
-                                    Autonomous coordination between multiple assets to overwhelm air defense systems.
+                                    Autonomous coordination between Orca and SkyMako assets to overwhelm air defense systems.
                                 </p>
                             </div>
                             <div className="card group">
@@ -135,7 +135,7 @@ const AerialPage = () => {
                                 <Zap className="h-8 w-8 text-white mb-6" strokeWidth={1} />
                                 <h3 className="text-xl font-medium mb-4">Kinetic Payload</h3>
                                 <p className="text-gray-400 font-light leading-relaxed text-sm">
-                                    Modular bay supports loitering munition configurations for precision strikes.
+                                    Modular bays on Barracuda and Leviathan support loitering munition configurations for precision strikes.
                                 </p>
                             </div>
                         </div>

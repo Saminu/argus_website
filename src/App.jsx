@@ -36,6 +36,7 @@ function App() {
             <Route path="/aerial" element={<AerialPage />} />
             <Route path="/aerial/:fleetId" element={<FleetDetailsPage />} />
             <Route path="/maritime" element={<MaritimePage />} />
+            <Route path="/maritime/:fleetId" element={<FleetDetailsPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/company" element={<CompanyPage />} />
             {/* Legacy route redirect or handle 404 if needed, for now just removing /drones */}

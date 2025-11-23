@@ -23,7 +23,7 @@ const ProductsPage = () => {
                 <span className="text-gray-500">Hardware.</span>
               </h1>
               <p className="text-xl md:text-2xl mb-12 max-w-2xl leading-relaxed text-gray-400 font-light">
-                High-performance compute modules and ruggedized sensor fusion nodes. We build the physical infrastructure that powers artificial intelligence at the tactical edge.
+                High-performance compute modules and ruggedized sensor fusion nodes. We build the physical infrastructure that powers the next generation of autonomous naval and aerial platforms.
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ const ProductsPage = () => {
                 </div>
                 <h2 className="text-4xl md:text-5xl font-medium mb-8 tracking-tight">Argus Core-X1</h2>
                 <p className="text-xl text-gray-400 font-light leading-relaxed mb-12">
-                  A ruggedized AI inference module designed for the tactical edge. Delivers server-grade processing power in a SWaP-optimized form factor, capable of running complex neural networks locally.
+                  A ruggedized AI inference module designed for the tactical edge. Flight-proven on the Ghost-V4 and Sea-proven on the Hammerhead, it delivers server-grade processing power in a SWaP-optimized form factor.
                 </p>
 
                 <div className="space-y-8">

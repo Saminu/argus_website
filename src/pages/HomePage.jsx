@@ -96,7 +96,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* Cinematic Video Section */}
+        {/* Cinematic Video Section - Hidden for now
         <section className="w-full bg-black relative">
           <div className="w-full h-[80vh] relative overflow-hidden">
             <video
@@ -117,6 +117,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+        */}
 
         {/* Strategic Pillars */}
         <section className="py-32 bg-black border-t border-white/10">
@@ -192,7 +193,7 @@ const HomePage = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10">
-              <div className="bg-black p-12 hover:bg-white/5 transition-colors duration-500 group cursor-pointer">
+              <Link to="/aerial" className="bg-black p-12 hover:bg-white/5 transition-colors duration-500 group cursor-pointer block">
                 <div className="flex justify-between items-start mb-12">
                   <Plane className="h-6 w-6 text-gray-500 group-hover:text-white transition-colors" strokeWidth={1} />
                   <ArrowRight className="h-5 w-5 text-gray-500 group-hover:text-white -rotate-45 group-hover:rotate-0 transition-all duration-300" />
@@ -201,9 +202,9 @@ const HomePage = () => {
                 <p className="text-gray-400 font-light">
                   AI-enabled air dominance. Our software stack transforms legacy airframes and next-gen drones into cognitive assets capable of autonomous decision-making in GPS-denied environments.
                 </p>
-              </div>
+              </Link>
 
-              <div className="bg-black p-12 hover:bg-white/5 transition-colors duration-500 group cursor-pointer">
+              <Link to="/maritime" className="bg-black p-12 hover:bg-white/5 transition-colors duration-500 group cursor-pointer block">
                 <div className="flex justify-between items-start mb-12">
                   <Waves className="h-6 w-6 text-gray-500 group-hover:text-white transition-colors" strokeWidth={1} />
                   <ArrowRight className="h-5 w-5 text-gray-500 group-hover:text-white -rotate-45 group-hover:rotate-0 transition-all duration-300" />
@@ -212,7 +213,7 @@ const HomePage = () => {
                 <p className="text-gray-400 font-light">
                   Deploying neural networks at the edge to secure sovereign waters. From autonomous surface vessels to deep-sea monitoring, ensuring continuous situational awareness.
                 </p>
-              </div>
+              </Link>
             </div>
           </div>
         </section>
