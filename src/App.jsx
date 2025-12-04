@@ -1,7 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
+import LandingPageV2 from './pages/LandingPageV2'
 import SolutionsPage from './pages/SolutionsPage'
 import ProductsPage from './pages/ProductsPage'
 import ResourcesPage from './pages/ResourcesPage'
@@ -17,15 +18,18 @@ import MaritimePage from './pages/MaritimePage'
 import ScrollToTop from './components/ScrollToTop'
 import './App.css'
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+  const isLandingPage = location.pathname === '/';
+
   return (
-    <Router>
+    <>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-grow">
+      <div className={isLandingPage ? "" : "min-h-screen flex flex-col"}>
+        {!isLandingPage && <Navbar />}
+        <main className={isLandingPage ? "" : "flex-grow"}>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<LandingPageV2 />} />
             <Route path="/solutions" element={<SolutionsPage />} />
             <Route path="/solutions/automotive" element={<AutomotivePage />} />
             <Route path="/solutions/oil-gas" element={<OilGasPage />} />
@@ -42,8 +46,16 @@ function App() {
             {/* Legacy route redirect or handle 404 if needed, for now just removing /drones */}
           </Routes>
         </main>
-        <Footer />
+        {!isLandingPage && <Footer />}
       </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   )
 }
