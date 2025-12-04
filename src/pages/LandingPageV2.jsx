@@ -90,7 +90,6 @@ const LandingPageV2 = () => {
                         </div>
                     </div>
                     <div className="flex items-center gap-4">
-                        <a href="#" className="hidden text-xs font-medium text-slate-300 hover:text-white sm:block">Log In</a>
                         <a href="mailto:contact@argusai.uk" className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-md bg-white px-5 py-2 text-xs font-bold text-black transition-all hover:bg-zinc-200">
                             <span>CONTACT SALES</span>
                         </a>
@@ -467,7 +466,7 @@ const LandingPageV2 = () => {
                                 </div>
                             </div>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-32 gap-y-32">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-32">
 
                                 {/* Item 1 (Top Left) */}
                                 <div className="flex flex-col items-center text-center group">
@@ -518,14 +517,14 @@ const LandingPageV2 = () => {
                 </section>
 
                 {/* Systems Section */}
-                <section className="border-y border-white/5 pt-24 pr-24 pb-24 pl-24" id="systems">
+                <section className="border-y border-white/5 py-12 px-6 md:p-24" id="systems">
                     <div className="border-gradient-mask group relative overflow-hidden rounded-[2.5rem] bg-zinc-900/20 backdrop-blur-md">
                         {/* Background Glow (Monochrome) */}
                         <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-zinc-600/10 blur-[100px] rounded-full pointer-events-none group-hover:bg-zinc-600/20 transition-colors duration-700"></div>
 
                         <div className="grid lg:grid-cols-2 z-10 gap-x-0 gap-y-0" style={{ position: 'relative', '--border-gradient': 'linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))' }}>
                             {/* Text Content */}
-                            <div className="md:p-16 flex flex-col z-10 pt-12 pr-12 pb-12 pl-12 justify-center">
+                            <div className="flex flex-col z-10 p-8 md:p-16 justify-center">
                                 <div className="mb-6 h-12 w-12 flex items-center justify-center rounded-2xl bg-white/5 border border-white/10 shadow-inner">
                                     <Crosshair className="h-6 w-6 text-white" />
                                 </div>
@@ -688,8 +687,8 @@ const LandingPageV2 = () => {
                             We are looking for engineers and operators who share our conviction that democratic values are worth protecting.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <a href="#" className="px-8 py-4 rounded-md bg-white text-black font-bold hover:bg-slate-200 transition-all hover:scale-105">View Open Roles</a>
-                            <a href="#" className="px-8 py-4 rounded-md border border-white/20 text-white font-medium hover:bg-white/5 transition-all">Contact Sales</a>
+                            <Link to="/company" className="px-8 py-4 rounded-md bg-white text-black font-bold hover:bg-slate-200 transition-all hover:scale-105">View Open Roles</Link>
+                            <a href="mailto:contact@argusai.uk" className="px-8 py-4 rounded-md border border-white/20 text-white font-medium hover:bg-white/5 transition-all">Contact Sales</a>
                         </div>
                     </div>
                 </section>
@@ -713,26 +712,26 @@ const LandingPageV2 = () => {
                         <div>
                             <h4 className="font-bold text-white mb-4 uppercase text-xs tracking-wider">Platform</h4>
                             <ul className="space-y-3 text-sm">
-                                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Air Superiority</a></li>
-                                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Maritime</a></li>
-                                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Command OS</a></li>
+                                <li><Link to="/aerial" className="text-slate-400 hover:text-white transition-colors">Air Superiority</Link></li>
+                                <li><Link to="/maritime" className="text-slate-400 hover:text-white transition-colors">Maritime</Link></li>
+                                <li><Link to="/products" className="text-slate-400 hover:text-white transition-colors">Command OS</Link></li>
                             </ul>
                         </div>
 
                         <div>
                             <h4 className="font-bold text-white mb-4 uppercase text-xs tracking-wider">Company</h4>
                             <ul className="space-y-3 text-sm">
-                                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Mission</a></li>
-                                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Careers</a></li>
-                                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Press</a></li>
+                                <li><Link to="/company" className="text-slate-400 hover:text-white transition-colors">Mission</Link></li>
+                                <li><Link to="/company" className="text-slate-400 hover:text-white transition-colors">Careers</Link></li>
+                                <li><Link to="/resources" className="text-slate-400 hover:text-white transition-colors">Press</Link></li>
                             </ul>
                         </div>
 
                         <div>
                             <h4 className="font-bold text-white mb-4 uppercase text-xs tracking-wider">Legal</h4>
                             <ul className="space-y-3 text-sm">
-                                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Privacy</a></li>
-                                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Terms</a></li>
+                                <li><Link to="/" className="text-slate-400 hover:text-white transition-colors">Privacy</Link></li>
+                                <li><Link to="/" className="text-slate-400 hover:text-white transition-colors">Terms</Link></li>
                             </ul>
                         </div>
                     </div>
