@@ -6,9 +6,9 @@ const CompanyPage = () => {
   return (
     <>
       <SEO
-        title="ARGUS Mission - Protecting Democracies"
-        description="We are a defense technology company providing AI-enabled precision mass and autonomous systems to protect democratic values."
-        keywords="defense mission, protecting democracies, precision mass, AI ethics, national security, defense technology"
+        title="ARGUS Mission - Advancing Autonomy"
+        description="We are an autonomous robotics company providing AI-enabled precision mass and autonomous systems to protect critical infrastructure."
+        keywords="robotics mission, advancing autonomy, precision mass, AI ethics, industrial security, robotics technology"
         image="https://argus.global/images/argus-logo-updated.png"
         url="https://argus.global/company"
       />
@@ -23,7 +23,7 @@ const CompanyPage = () => {
                 <span className="text-gray-500">is to Protect.</span>
               </h1>
               <p className="text-xl md:text-2xl mb-12 max-w-2xl leading-relaxed text-gray-400 font-light">
-                We believe that the defense of democratic values requires technological superiority. We build the systems that ensure this advantage.
+                We believe that the future of critical industries requires technological superiority. We build the systems that ensure this advantage.
               </p>
             </div>
           </div>
@@ -39,13 +39,13 @@ const CompanyPage = () => {
                   The global security landscape has shifted. Authoritarian regimes are leveraging technology to undermine democratic institutions. The speed of conflict has accelerated beyond human cognitive limits.
                 </p>
                 <p className="text-lg text-gray-400 font-light leading-relaxed">
-                  To preserve peace and stability, democracies must possess defense capabilities that are not just reactive, but predictive and autonomous.
+                  To preserve efficiency and stability, industries must possess autonomous capabilities that are not just reactive, but predictive and adaptive.
                 </p>
               </div>
               <div>
                 <h2 className="text-3xl font-medium mb-8">Our Response</h2>
                 <p className="text-lg text-gray-400 font-light leading-relaxed mb-8">
-                  Argus Systems is building the software infrastructure for the next generation of defense. We reject the notion that AI is inherently dangerous; rather, we believe that responsible, sovereign AI is the ultimate shield against aggression.
+                  Argus Systems is building the software infrastructure for the next generation of intelligent robotics. We reject the notion that AI is inherently dangerous; rather, we believe that responsible, sovereign AI is the ultimate tool for progress.
                 </p>
                 <p className="text-lg text-gray-400 font-light leading-relaxed">
                   Our commitment is to open standards, transparency, and the unwavering support of those who defend our freedoms.

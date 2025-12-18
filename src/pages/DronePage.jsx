@@ -7,8 +7,8 @@ const DronePage = () => {
     <>
       <SEO
         title="ARGUS Autonomous Assets - Air & Sea"
-        description="Autonomous aerial and marine systems for defense and security. AI-enabled drones and USVs for persistent surveillance and kinetic operations."
-        keywords="autonomous drones, defense drones, USV, unmanned surface vehicle, loitering munition, aerial surveillance"
+        description="Autonomous aerial and marine systems for industry and security. AI-enabled drones and USVs for persistent surveillance and critical operations."
+        keywords="autonomous drones, industrial drones, USV, unmanned surface vehicle, remote monitoring, aerial surveillance"
         image="https://argus.global/images/argus-logo-updated.png"
         url="https://argus.global/drones"
       />
@@ -39,7 +39,7 @@ const DronePage = () => {
                 </div>
                 <h2 className="text-4xl md:text-5xl font-medium mb-8 tracking-tight">Ghost-V4 UAS</h2>
                 <p className="text-xl text-gray-400 font-light leading-relaxed mb-12">
-                  A low-observable, long-endurance unmanned aerial system designed for deep sensing and electronic warfare. Capable of autonomous swarming and collaborative engagement.
+                  A low-observable, long-endurance unmanned aerial system designed for deep sensing and signal resilience. Capable of autonomous swarming and collaborative engagement.
                 </p>
 
                 <div className="space-y-8 font-mono text-sm">
@@ -99,7 +99,7 @@ const DronePage = () => {
                 </div>
                 <h2 className="text-4xl md:text-5xl font-medium mb-8 tracking-tight">Triton USV</h2>
                 <p className="text-xl text-gray-400 font-light leading-relaxed mb-12">
-                  Autonomous surface vessel for littoral surveillance and mine countermeasures. Modular payload bay allows for rapid reconfiguration between ISR and kinetic missions.
+                  Autonomous surface vessel for littoral surveillance and infrastructure inspection. Modular payload bay allows for rapid reconfiguration between ISR and advanced missions.
                 </p>
 
                 <div className="space-y-8 font-mono text-sm">
@@ -140,21 +140,21 @@ const DronePage = () => {
                 <Crosshair className="h-8 w-8 text-white mb-6" strokeWidth={1} />
                 <h3 className="text-xl font-medium mb-4">Precision Targeting</h3>
                 <p className="text-gray-400 font-light leading-relaxed text-sm">
-                  AI-assisted target recognition reduces collateral damage and ensures mission success in cluttered environments.
+                  AI-assisted target recognition reduces operational risks and ensures mission success in cluttered environments.
                 </p>
               </div>
               <div className="card group">
                 <Target className="h-8 w-8 text-white mb-6" strokeWidth={1} />
                 <h3 className="text-xl font-medium mb-4">Swarm Intelligence</h3>
                 <p className="text-gray-400 font-light leading-relaxed text-sm">
-                  Assets communicate and coordinate tactics in real-time, overwhelming adversary defenses through synchronized action.
+                  Assets communicate and coordinate tactics in real-time, maximizing operational coverage through synchronized action.
                 </p>
               </div>
               <div className="card group">
                 <Shield className="h-8 w-8 text-white mb-6" strokeWidth={1} />
                 <h3 className="text-xl font-medium mb-4">Resilient Comms</h3>
                 <p className="text-gray-400 font-light leading-relaxed text-sm">
-                  Advanced waveforms and optical links maintain connectivity in heavy electronic warfare environments.
+                  Advanced waveforms and optical links maintain connectivity in high-interference environments.
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ const DronePage = () => {
               Secure the Advantage
             </h2>
             <p className="text-xl mb-12 leading-relaxed text-gray-400 font-light max-w-2xl mx-auto">
-              Contact our defense solutions team for detailed technical specifications and capability demonstrations.
+              Contact our robotics solutions team for detailed technical specifications and capability demonstrations.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/company" className="btn-primary">

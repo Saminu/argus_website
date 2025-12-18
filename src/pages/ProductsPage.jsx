@@ -8,7 +8,7 @@ const ProductsPage = () => {
       <SEO
         title="ARGUS Hardware - AI-Enabled Edge Systems"
         description="Ruggedized AI compute modules and sensor fusion nodes for the tactical edge. High-performance hardware built for contested environments."
-        keywords="defense hardware, edge AI, ruggedized compute, sensor fusion, tactical edge, embedded systems"
+        keywords="industrial hardware, edge AI, ruggedized compute, sensor fusion, tactical edge, embedded systems"
         image="https://argus.global/images/argus-logo-updated.png"
         url="https://argus.global/products"
       />
@@ -107,7 +107,7 @@ const ProductsPage = () => {
                 </div>
                 <h2 className="text-4xl md:text-5xl font-medium mb-8 tracking-tight">Omni-Vision Node</h2>
                 <p className="text-xl text-gray-400 font-light leading-relaxed mb-12">
-                  Integrated multi-spectral sensor nodes with on-board processing. Combining EO/IR, LiDAR, and acoustic sensors to create a comprehensive real-time picture of the battlespace.
+                  Integrated multi-spectral sensor nodes with on-board processing. Combining EO/IR, LiDAR, and acoustic sensors to create a comprehensive real-time picture of the operational environment.
                 </p>
 
                 <div className="space-y-8">
@@ -144,7 +144,7 @@ const ProductsPage = () => {
             <div className="text-center mb-24">
               <h2 className="text-3xl font-medium mb-6">Hardware Specifications</h2>
               <p className="text-gray-400 font-light max-w-2xl mx-auto">
-                Built to military standards for reliability and performance.
+                Built to industrial standards for reliability and performance.
               </p>
             </div>
 
@@ -178,7 +178,7 @@ const ProductsPage = () => {
         <section className="py-32 bg-off-black text-white border-t border-white/10">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-medium mb-8 tracking-tight">
-              Equip Your Force
+              Equip Your Fleet
             </h2>
             <p className="text-xl mb-12 leading-relaxed text-gray-400 font-light max-w-2xl mx-auto">
               Contact our hardware engineering team for datasheets and integration guides.

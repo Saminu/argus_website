@@ -7,8 +7,8 @@ const AerialPage = () => {
         <>
             <SEO
                 title="ARGUS Aerial Systems - Ghost-V4 UAS"
-                description="Autonomous aerial systems for defense. Ghost-V4 UAS provides deep sensing, electronic warfare capabilities, and precision mass swarming."
-                keywords="autonomous drones, UAS, UAV, defense drones, swarming drones, precision mass, electronic warfare"
+                description="Autonomous aerial systems for enterprise. Ghost-V4 UAS provides deep sensing, signal resilience capabilities, and precision mass swarming."
+                keywords="autonomous drones, UAS, UAV, industrial drones, swarming drones, precision mass, signal resilience"
                 image="https://argus.global/images/argus-logo-updated.png"
                 url="https://argus.global/aerial"
             />
@@ -112,7 +112,7 @@ const AerialPage = () => {
                         <div className="text-center mb-24">
                             <h2 className="text-3xl font-medium mb-6">Operational Capabilities</h2>
                             <p className="text-gray-400 font-light max-w-2xl mx-auto">
-                                Engineered for the most demanding combat environments.
+                                Engineered for the most demanding operational environments.
                             </p>
                         </div>
 
@@ -121,21 +121,21 @@ const AerialPage = () => {
                                 <Target className="h-8 w-8 text-white mb-6" strokeWidth={1} />
                                 <h3 className="text-xl font-medium mb-4">Swarm Logic</h3>
                                 <p className="text-gray-400 font-light leading-relaxed text-sm">
-                                    Autonomous coordination between Orca and SkyMako assets to overwhelm air defense systems.
+                                    Autonomous coordination between Orca and SkyMako assets to maximize coverage area.
                                 </p>
                             </div>
                             <div className="card group">
                                 <Shield className="h-8 w-8 text-white mb-6" strokeWidth={1} />
-                                <h3 className="text-xl font-medium mb-4">EW Resilience</h3>
+                                <h3 className="text-xl font-medium mb-4">Signal Resilience</h3>
                                 <p className="text-gray-400 font-light leading-relaxed text-sm">
-                                    Operates effectively in GPS-denied and jammed environments using visual navigation.
+                                    Operates effectively in GNSS-denied and high-interference environments using visual navigation.
                                 </p>
                             </div>
                             <div className="card group">
                                 <Zap className="h-8 w-8 text-white mb-6" strokeWidth={1} />
-                                <h3 className="text-xl font-medium mb-4">Kinetic Payload</h3>
+                                <h3 className="text-xl font-medium mb-4">Modular Payload</h3>
                                 <p className="text-gray-400 font-light leading-relaxed text-sm">
-                                    Modular bays on Barracuda and Leviathan support loitering munition configurations for precision strikes.
+                                    Modular bays on Barracuda and Leviathan support advanced sensor configurations for precision inspection.
                                 </p>
                             </div>
                         </div>
@@ -146,10 +146,10 @@ const AerialPage = () => {
                 <section className="py-32 bg-black text-white border-t border-white/10">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <h2 className="text-4xl md:text-5xl font-medium mb-8 tracking-tight">
-                            Deploy Air Superiority
+                            Deploy Aerial Autonomy
                         </h2>
                         <p className="text-xl mb-12 leading-relaxed text-gray-400 font-light max-w-2xl mx-auto">
-                            Contact our defense solutions team for detailed technical specifications.
+                            Contact our robotics solutions team for detailed technical specifications.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Link to="/company" className="btn-primary">

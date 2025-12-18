@@ -60,8 +60,8 @@ const HomePage = () => {
     <>
       <SEO
         title="ARGUS - AI-Enabled Precision Mass & Autonomous Systems"
-        description="We provide AI-enabled precision mass and autonomous systems across defense and security. Building the operating system for the modern battlefield."
-        keywords="defense AI, precision mass, autonomous systems, defense technology, AI security, software-defined defense"
+        description="We provide AI-enabled precision mass and autonomous systems across critical industries. Building the operating system for modern specialized operations."
+        keywords="industrial AI, precision mass, autonomous systems, robotics technology, AI security, software-defined autonomy"
         image="https://argus.global/images/argus-logo-updated.png"
         url="https://argus.global/"
       />
@@ -77,11 +77,11 @@ const HomePage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-medium mb-8 tracking-tighter leading-tight">
               Artificial Intelligence<br />
-              <span className="text-subtle">to Protect Democracies</span>
+              <span className="text-subtle">to Advance Autonomy</span>
             </h1>
 
             <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed text-gray-400 font-light">
-              We provide AI-enabled precision mass and autonomous systems across defense and security.
+              We provide AI-enabled precision mass and autonomous systems across critical industries.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -139,7 +139,7 @@ const HomePage = () => {
                   <h3 className="text-2xl font-medium mb-4 text-white">Information Superiority</h3>
                 </div>
                 <p className="leading-relaxed text-gray-400 text-lg font-light">
-                  In the modern battlespace, data is the weapon. Our systems process sensor data on-device, delivering real-time situational awareness without latency.
+                  In modern operations, data is the asset. Our systems process sensor data on-device, delivering real-time situational awareness without latency.
                 </p>
               </div>
 
@@ -149,7 +149,7 @@ const HomePage = () => {
                   <h3 className="text-2xl font-medium mb-4 text-white">Sovereign & Secure</h3>
                 </div>
                 <p className="leading-relaxed text-gray-400 text-lg font-light">
-                  Built on open standards for complete transparency. We ensure that critical defense infrastructure remains under sovereign control, free from black boxes.
+                  Built on open standards for complete transparency. We ensure that critical infrastructure remains under sovereign control, free from black boxes.
                 </p>
               </div>
             </div>
@@ -200,7 +200,7 @@ const HomePage = () => {
                 </div>
                 <h3 className="text-3xl font-medium mb-4">Air Superiority</h3>
                 <p className="text-gray-400 font-light">
-                  AI-enabled air dominance. Our software stack transforms legacy airframes and next-gen drones into cognitive assets capable of autonomous decision-making in GPS-denied environments.
+                  AI-enabled aerial autonomy. Our software stack transforms legacy platforms and next-gen drones into cognitive assets capable of autonomous decision-making in GNSS-denied environments.
                 </p>
               </Link>
 
@@ -211,7 +211,7 @@ const HomePage = () => {
                 </div>
                 <h3 className="text-3xl font-medium mb-4">Maritime Intelligence</h3>
                 <p className="text-gray-400 font-light">
-                  Deploying neural networks at the edge to secure sovereign waters. From autonomous surface vessels to deep-sea monitoring, ensuring continuous situational awareness.
+                  Deploying neural networks at the edge to secure offshore assets. From autonomous surface vessels to deep-sea monitoring, ensuring continuous situational awareness.
                 </p>
               </Link>
             </div>
@@ -225,7 +225,7 @@ const HomePage = () => {
               Join the Mission
             </h2>
             <p className="text-xl mb-12 leading-relaxed text-gray-400 font-light max-w-2xl mx-auto">
-              We are looking for engineers and operators who share our conviction that democratic values are worth protecting.
+              We are looking for engineers and operators who share our conviction that autonomous technology drives progress.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/company" className="btn-primary">

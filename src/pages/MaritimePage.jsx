@@ -7,7 +7,7 @@ const MaritimePage = () => {
         <>
             <SEO
                 title="ARGUS Maritime Systems - Triton USV"
-                description="Autonomous maritime systems for defense. Triton USV provides littoral surveillance, mine countermeasures, and precision mass naval operations."
+                description="Autonomous maritime systems for industry. Triton USV provides littoral surveillance, infrastructure inspection, and precision mass naval operations."
                 keywords="USV, unmanned surface vehicle, naval drones, maritime security, autonomous boats, precision mass"
                 image="https://argus.global/images/argus-logo-updated.png"
                 url="https://argus.global/maritime"
@@ -26,7 +26,7 @@ const MaritimePage = () => {
                                 <span className="text-gray-500">Intelligence.</span>
                             </h1>
                             <p className="text-xl md:text-2xl mb-12 max-w-2xl leading-relaxed text-gray-400 font-light">
-                                Deploying neural networks at the edge to secure sovereign waters. From autonomous surface vessels to deep-sea monitoring, ensuring continuous situational awareness.
+                                Deploying neural networks at the edge to secure offshore assets. From autonomous surface vessels to deep-sea monitoring, ensuring continuous situational awareness.
                             </p>
                         </div>
                     </div>
@@ -89,7 +89,7 @@ const MaritimePage = () => {
                 <section className="py-32 bg-off-black">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-24">
-                            <h2 className="text-3xl font-medium mb-6">Naval Capabilities</h2>
+                            <h2 className="text-3xl font-medium mb-6">Marine Capabilities</h2>
                             <p className="text-gray-400 font-light max-w-2xl mx-auto">
                                 Securing the maritime domain through autonomous innovation.
                             </p>
@@ -125,7 +125,7 @@ const MaritimePage = () => {
                 <section className="py-32 bg-black text-white border-t border-white/10">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <h2 className="text-4xl md:text-5xl font-medium mb-8 tracking-tight">
-                            Secure the Seas
+                            Autonomy at Sea
                         </h2>
                         <p className="text-xl mb-12 leading-relaxed text-gray-400 font-light max-w-2xl mx-auto">
                             Contact our maritime division for capability demonstrations.

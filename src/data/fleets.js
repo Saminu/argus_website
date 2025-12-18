@@ -3,8 +3,8 @@ export const fleets = {
     id: 'skymako',
     name: 'The SkyMako™ Ghost-Ray 260',
     tagline: 'Silent. Hover. Strike. The Apex Predator of the Skies.',
-    role: 'Long-Range Tactical Scout & Anti-Interference',
-    vibe: 'The SkyMako cuts through the air like a blade through water. Designed for pilots who need the endurance of a glider but the agility of a helicopter, it doesn\'t just fly; it stalks. Built with shielded avionics, it is designed to punch through electronic jamming and operate where other drones fail.',
+    role: 'Long-Range Industrial Scout & Signal Resilience',
+    vibe: 'The SkyMako cuts through the air like a blade through water. Designed for operators who need the endurance of a glider but the agility of a helicopter, it doesn\'t just fly; it tracks. Built with shielded avionics, it is designed to maintain link stability and operate where other drones fail.',
     techSpecs: {
       'Wingspan': '2.5 Meters',
       'Body': 'Kevlar/Carbon Composite (Matte Grey Stealth)',
@@ -29,7 +29,7 @@ export const fleets = {
     id: 'barracuda',
     name: 'The Barracuda 260 "Switchblade"',
     tagline: 'Unfold. Launch. Dominate. The Pocket-Sized Powerhouse.',
-    role: 'Rapid Deployment & Covert Surveillance',
+    role: 'Rapid Deployment & Remote Monitoring',
     vibe: 'If the SkyMako is the ghost, the Barracuda is the knife. Compact, aggressive, and built with a "Quick-Lock" folding geometry, it’s the ultimate tool for rapid response. It fits in the trunk of a sedan and launches in under 120 seconds.',
     techSpecs: {
       'Top Speed': '110 km/h (68 mph)',
@@ -79,7 +79,7 @@ export const fleets = {
     id: 'orca',
     name: 'The Orca Pod (Autonomous Sentinel)',
     tagline: 'The Pilot is Optional. The Mission is Permanent.',
-    role: '24/7 Automated Security & Perimeter Defense',
+    role: '24/7 Automated Security & Perimeter Monitoring',
     vibe: 'The Orca Pod is the hive. It is a ruggedized, weather-sealed "Drone-in-a-Box" system. You don\'t fly it; you command it. Deploy the box, set the schedule, and walk away. It launches, patrols, lands, and recharges automatically—day or night, rain or shine.',
     techSpecs: {
       'Ingress Protection': 'IP55 (Rain, Snow, Dust Proof)',
@@ -104,7 +104,7 @@ export const fleets = {
     id: 'hammerhead',
     name: 'The Hammerhead USV',
     tagline: 'The Surface is Just the Beginning. See What Lies Beneath.',
-    role: 'Autonomous Hydrographic Survey & Tactical Marine Drone',
+    role: 'Autonomous Hydrographic Survey & Industrial Marine Drone',
     vibe: 'The SkyMako owns the air; The Hammerhead owns the water. This is not a toy boat. It is a dual-hull, carbon-fiber autonomous laboratory designed to map the unknown. Whether you are scanning a harbor for submerged hazards, inspecting bridge pilings, or hunting for shipwrecks, the Hammerhead glides silently across the surface, using advanced sonar to strip away the water and reveal the floor below in high-definition 3D.',
     techSpecs: {
       'Hull Material': 'Carbon Fiber & Kevlar Composite (Corrosion Proof)',

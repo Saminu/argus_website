@@ -13,17 +13,17 @@ const Footer = () => {
               <span className="text-xl font-medium tracking-tight">ARGUS</span>
             </div>
             <p className="text-sm text-gray-500 max-w-md mb-8 leading-relaxed">
-              Artificial intelligence to protect our democracies. We build software-defined defense systems that ensure information superiority in the modern battlespace.
+              Artificial intelligence to protect our critical infrastructure. We build software-defined autonomous systems that ensure information superiority in modern operations.
             </p>
             <p className="text-xs text-gray-600 font-mono">
-              © 2025 Argus Systems. All rights reserved.
+              © 2025 Argus Robotics. All rights reserved.
             </p>
           </div>
 
           <div>
             <h3 className="font-medium text-sm text-white mb-6 uppercase tracking-widest">Capabilities</h3>
             <ul className="space-y-4 text-sm text-gray-400">
-              <li><Link to="/products" className="hover:text-white transition-colors">Software-Defined Defense</Link></li>
+              <li><Link to="/products" className="hover:text-white transition-colors">Software-Defined Autonomy</Link></li>
               <li><Link to="/aerial" className="hover:text-white transition-colors">Aerial Systems</Link></li>
               <li><Link to="/maritime" className="hover:text-white transition-colors">Maritime Systems</Link></li>
             </ul>

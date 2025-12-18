@@ -80,7 +80,7 @@ const LandingPageV2 = () => {
                             </div>
                             <div className="flex flex-col leading-none justify-center">
                                 <span className="text-base font-bold text-white tracking-widest font-jakarta">ARGUS</span>
-                                <span className="text-[9px] font-bold text-slate-400 tracking-[0.2em] uppercase font-geist">DEFENSE</span>
+                                <span className="text-[9px] font-bold text-slate-400 tracking-[0.2em] uppercase font-geist">SYSTEMS</span>
                             </div>
                         </Link>
                         <div className="hidden md:flex items-center gap-6 ml-4">
@@ -159,14 +159,14 @@ const LandingPageV2 = () => {
                             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 mb-8 backdrop-blur-md shadow-[0_0_20px_rgba(255,255,255,0.05)]">
                                 <div className="h-1.5 w-1.5 animate-pulse bg-white rounded-full"></div>
                                 <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-slate-200 font-jakarta">
-                                    Argus Defense Systems
+                                    Argus Robotics Systems
                                 </span>
                             </div>
 
                             <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-white mb-6 leading-[1.1]">
                                 Autonomous Intelligence
                                 <span className="text-gradient-silver relative inline-block ml-3">
-                                    for Modern Defense
+                                    for Modern Robotics
                                     {/* Glitch decorative underline */}
                                     <svg className="absolute w-full h-2 bottom-0 left-0 text-white/20" viewBox="0 0 100 10" preserveAspectRatio="none">
                                         <path d="M0 5 Q 50 10 100 5" fill="transparent" stroke="currentColor" strokeWidth="1" className=""></path>
@@ -175,7 +175,7 @@ const LandingPageV2 = () => {
                             </h1>
 
                             <p className="text-lg text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">
-                                We provide AI-enabled precision mass and autonomous systems. Software-defined superiority for the modern battlespace.
+                                We provide AI-enabled precision mass and autonomous systems. Software-defined superiority for complex environments.
                             </p>
 
                             <div className="mt-8 flex items-center justify-center gap-4">
@@ -418,7 +418,7 @@ const LandingPageV2 = () => {
                                 Our Capabilities
                             </h2>
                             <p className="text-slate-400 text-lg max-w-xl mx-auto font-light">
-                                Software-defined superiority for sovereign defense.
+                                Software-defined superiority for sovereign robotics.
                             </p>
                         </div>
 
@@ -497,7 +497,7 @@ const LandingPageV2 = () => {
                                     </div>
                                     <h3 className="text-lg font-semibold text-white mb-2">Sovereign &amp; Secure</h3>
                                     <p className="text-sm text-slate-400 max-w-[240px]">
-                                        Built on open standards. We ensure critical defense infrastructure remains under sovereign control.
+                                        Built on open standards. We ensure critical infrastructure remains under sovereign control.
                                     </p>
                                 </div>
 
@@ -646,7 +646,7 @@ const LandingPageV2 = () => {
                                                 <p><span className="text-purple-400">import</span> <span class="text-yellow-200">NeuralNet</span>;</p>
                                                 <br />
                                                 <p><span className="text-blue-400">void</span> main() {'{'}</p>
-                                                <p className="pl-4">System.init(Mode.DEFENSE);</p>
+                                                <p className="pl-4">System.init(Mode.AUTONOMOUS);</p>
                                                 <p className="pl-4">while(active) {'{'}</p>
                                                 <p className="pl-8">scan();</p>
                                                 <p className="pl-8">analyze_telemetry();</p>
@@ -659,7 +659,7 @@ const LandingPageV2 = () => {
                                                 <p><span className="text-purple-400">import</span> <span className="text-yellow-200">NeuralNet</span>;</p>
                                                 <br />
                                                 <p><span className="text-blue-400">void</span> main() {'{'}</p>
-                                                <p className="pl-4">System.init(Mode.DEFENSE);</p>
+                                                <p className="pl-4">System.init(Mode.AUTONOMOUS);</p>
                                                 <p className="pl-4">while(active) {'{'}</p>
                                                 <p className="pl-8">scan();</p>
                                                 <p className="pl-8">analyze_telemetry();</p>
@@ -705,7 +705,7 @@ const LandingPageV2 = () => {
                                 </div>
                             </a>
                             <p className="text-slate-400 text-sm leading-relaxed max-w-xs mb-8">
-                                Artificial intelligence to protect our democracies. We build software-defined defense systems that ensure information superiority in the modern battlespace.
+                                Artificial intelligence to protect our critical infrastructure. We build software-defined autonomous systems that ensure information superiority in modern operations.
                             </p>
                         </div>
 
@@ -737,7 +737,7 @@ const LandingPageV2 = () => {
                     </div>
                     <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-xs text-slate-500">
-                            © 2024 Argus Defense. All rights reserved.
+                            © 2024 Argus Robotics. All rights reserved.
                         </p>
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
