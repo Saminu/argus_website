@@ -69,8 +69,36 @@ const LandingPageV2 = () => {
                 <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[120%] h-[800px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-zinc-800/10 via-[#020204]/80 to-transparent blur-[80px]"></div>
             </div>
 
+            {/* ISO Certification Banner - Premium Announcement */}
+            <div className="fixed top-0 z-50 w-full bg-gradient-to-r from-amber-950/90 via-yellow-900/80 to-amber-950/90 border-b border-amber-500/30 shadow-[0_4px_30px_rgba(251,191,36,0.15)]">
+                <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-center gap-4">
+                    {/* Shield Icon */}
+                    <div className="hidden sm:flex items-center justify-center w-8 h-8 rounded-full bg-amber-500/20 border border-amber-400/30">
+                        <Shield className="w-4 h-4 text-amber-400" />
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+                        <div className="flex items-center gap-3">
+                            <div className="h-2 w-2 rounded-full bg-amber-400 animate-pulse shadow-[0_0_10px_rgba(251,191,36,0.6)]"></div>
+                            <span className="text-sm sm:text-base font-bold text-amber-100 tracking-wide">
+                                ISO/IEC 27001:2022 & ISO 9001:2015 Certified
+                            </span>
+                        </div>
+                        <div className="hidden md:flex items-center gap-2">
+                            <span className="text-amber-500/60">•</span>
+                            <span className="text-sm text-amber-200/80 font-medium">Information Security & Quality Management</span>
+                        </div>
+                    </div>
+
+                    {/* Badge */}
+                    <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/40">
+                        <span className="text-xs font-bold text-amber-300 uppercase tracking-wider">Certified</span>
+                    </div>
+                </div>
+            </div>
+
             {/* Navigation */}
-            <nav className="fixed top-0 z-50 w-full border-b border-white/5 bg-[#030508]/80 backdrop-blur-xl">
+            <nav className="fixed top-[52px] z-50 w-full border-b border-white/5 bg-[#030508]/80 backdrop-blur-xl">
                 <div className="flex max-w-7xl mx-auto px-6 py-4 items-center justify-between">
                     <div className="flex items-center gap-8">
                         <Link to="/" className="flex items-center gap-3 group">
@@ -381,7 +409,8 @@ const LandingPageV2 = () => {
 
                 {/* Stats / Partners */}
                 <section className="overflow-visible max-w-7xl mr-auto ml-auto pt-10 pb-20 px-6 relative border-b border-white/5">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    {/* Stats Grid */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-16">
                         <div className="group">
                             <div className="text-4xl font-bold text-white mb-2 group-hover:text-zinc-300 transition-colors">100%</div>
                             <div className="text-xs font-bold uppercase tracking-wider text-zinc-600">Open Architecture</div>
@@ -397,6 +426,79 @@ const LandingPageV2 = () => {
                         <div className="group">
                             <div className="text-4xl font-bold text-white mb-2 group-hover:text-zinc-300 transition-colors">∞</div>
                             <div className="text-xs font-bold uppercase tracking-wider text-zinc-600">Scalability</div>
+                        </div>
+                    </div>
+
+                    {/* Compliance & Certifications */}
+                    <div className="border-t border-white/5 pt-12">
+                        <div className="text-center mb-8">
+                            <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-zinc-500 mb-2">Compliance & Certifications</h3>
+                            <p className="text-xs text-zinc-600">Industry-leading security and quality standards</p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                            {/* ISO 27001 */}
+                            <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-zinc-900/50 p-6 hover:border-amber-500/30 hover:bg-zinc-900/80 transition-all duration-300">
+                                <div className="absolute top-0 right-0 w-20 h-20 bg-amber-500/5 blur-2xl rounded-full"></div>
+                                <div className="relative">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
+                                            <Shield className="w-5 h-5 text-amber-400" />
+                                        </div>
+                                        <div className="flex-1">
+                                            <div className="text-xs font-bold text-amber-400 uppercase tracking-wider">ISO/IEC</div>
+                                            <div className="text-lg font-bold text-white">27001:2022</div>
+                                        </div>
+                                    </div>
+                                    <p className="text-xs text-zinc-400 leading-relaxed">Information Security Management System</p>
+                                    <div className="mt-4 flex items-center gap-2">
+                                        <div className="h-1.5 w-1.5 rounded-full bg-emerald-400"></div>
+                                        <span className="text-[10px] text-emerald-400 font-medium uppercase tracking-wide">Certified</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* ISO 9001 */}
+                            <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-zinc-900/50 p-6 hover:border-blue-500/30 hover:bg-zinc-900/80 transition-all duration-300">
+                                <div className="absolute top-0 right-0 w-20 h-20 bg-blue-500/5 blur-2xl rounded-full"></div>
+                                <div className="relative">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
+                                            <Shield className="w-5 h-5 text-blue-400" />
+                                        </div>
+                                        <div className="flex-1">
+                                            <div className="text-xs font-bold text-blue-400 uppercase tracking-wider">ISO</div>
+                                            <div className="text-lg font-bold text-white">9001:2015</div>
+                                        </div>
+                                    </div>
+                                    <p className="text-xs text-zinc-400 leading-relaxed">Quality Management System</p>
+                                    <div className="mt-4 flex items-center gap-2">
+                                        <div className="h-1.5 w-1.5 rounded-full bg-emerald-400"></div>
+                                        <span className="text-[10px] text-emerald-400 font-medium uppercase tracking-wide">Certified</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* UK CAA */}
+                            <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-zinc-900/50 p-6 hover:border-purple-500/30 hover:bg-zinc-900/80 transition-all duration-300">
+                                <div className="absolute top-0 right-0 w-20 h-20 bg-purple-500/5 blur-2xl rounded-full"></div>
+                                <div className="relative">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center">
+                                            <Shield className="w-5 h-5 text-purple-400" />
+                                        </div>
+                                        <div className="flex-1">
+                                            <div className="text-xs font-bold text-purple-400 uppercase tracking-wider">UK CAA</div>
+                                            <div className="text-lg font-bold text-white">A2 CofC</div>
+                                        </div>
+                                    </div>
+                                    <p className="text-xs text-zinc-400 leading-relaxed">Remote Pilot Certificate of Competence</p>
+                                    <div className="mt-4 flex items-center gap-2">
+                                        <div className="h-1.5 w-1.5 rounded-full bg-emerald-400"></div>
+                                        <span className="text-[10px] text-emerald-400 font-medium uppercase tracking-wide">Certified</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
