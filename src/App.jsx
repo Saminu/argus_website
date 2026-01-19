@@ -15,6 +15,7 @@ import HealthcarePage from './pages/HealthcarePage'
 import AerialPage from './pages/AerialPage'
 import FleetDetailsPage from './pages/FleetDetailsPage'
 import MaritimePage from './pages/MaritimePage'
+import ProjectsPage from './pages/ProjectsPage'
 import ScrollToTop from './components/ScrollToTop'
 import './App.css'
 
@@ -43,6 +44,7 @@ function AppContent() {
             <Route path="/maritime/:fleetId" element={<FleetDetailsPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/company" element={<CompanyPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
             {/* Legacy route redirect or handle 404 if needed, for now just removing /drones */}
           </Routes>
         </main>

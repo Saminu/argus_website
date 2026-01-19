@@ -58,6 +58,9 @@ const Navbar = () => {
               <Link to="/maritime" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
                 Maritime
               </Link>
+              <Link to="/projects" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
+                Projects
+              </Link>
               <Link to="/company" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
                 Mission
               </Link>
@@ -86,6 +89,9 @@ const Navbar = () => {
               </Link>
               <Link to="/maritime" className="text-lg font-medium text-white hover:text-gray-300">
                 Maritime
+              </Link>
+              <Link to="/projects" className="text-lg font-medium text-white hover:text-gray-300">
+                Projects
               </Link>
               <Link to="/company" className="text-lg font-medium text-white hover:text-gray-300">
                 Mission

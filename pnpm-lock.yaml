@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@babylonjs/core':
+        specifier: ^8.46.2
+        version: 8.46.2
+      '@babylonjs/gui':
+        specifier: ^8.46.2
+        version: 8.46.2(@babylonjs/core@8.46.2)
+      '@babylonjs/loaders':
+        specifier: ^8.46.2
+        version: 8.46.2(@babylonjs/core@8.46.2)(babylonjs-gltf2interface@8.46.2)
       '@hookform/resolvers':
         specifier: ^5.0.1
         version: 5.0.1(react-hook-form@7.56.3(react@19.1.0))
@@ -281,6 +290,20 @@ packages:
   '@babel/types@7.27.1':
     resolution: {integrity: sha512-+EzkxvLNfiUeKMgy/3luqfsCWFRXLb7U6wNQTk60tovuckwB15B191tJWvpp4HjiQWdJkCxO3Wbvc6jlk3Xb2Q==}
     engines: {node: '>=6.9.0'}
+
+  '@babylonjs/core@8.46.2':
+    resolution: {integrity: sha512-CrRpd05C6+bQjrmnel4NzNxDCRCHuBCua0cIHxtugGumonTIu9/7D8Dpz/X0X3NWU92dL7qETE1QdPaqlsCJig==}
+
+  '@babylonjs/gui@8.46.2':
+    resolution: {integrity: sha512-1V+aeu/42mWDuYAFvGzeBBHKL2n4f7jZA8Q9QjCJs8VYN/+gsQ5XJekWZZ0z0TV7u8SC9Uw3rsrI/HePn06faw==}
+    peerDependencies:
+      '@babylonjs/core': ^8.0.0
+
+  '@babylonjs/loaders@8.46.2':
+    resolution: {integrity: sha512-fOATzKPzUmrcB0TuYLU4JEZPs2QONykecf5rb84lRm/MXyHTKfZFuccSS/89xrR43ytYPWQatkg87/+2dSbquw==}
+    peerDependencies:
+      '@babylonjs/core': ^8.0.0
+      babylonjs-gltf2interface: ^8.0.0
 
   '@emnapi/runtime@1.5.0':
     resolution: {integrity: sha512-97/BJ3iXHww3djw6hYIfErCZFee7qCtrneuLa20UXFCOTCfBM2cvQHjWJ2EG0s0MtdNwInarqCTz35i4wWXHsQ==}
@@ -1557,6 +1580,9 @@ packages:
     resolution: {integrity: sha512-y+CcFFwelSXpLZk/7fMB2mUbGtX9lKycf1MWJ7CaTIERyitVlyQx6C+sxcROU2BAJ24OiZyK+8wj2i8AlBoS3A==}
     engines: {node: '>=10'}
 
+  babylonjs-gltf2interface@8.46.2:
+    resolution: {integrity: sha512-w0e4lCvTf4bQ/66aiJMBZPLoi1FEHuX8Puyqi2N/AWMmolAo5cDGR7j1/jMa1QHI8gO4LVBhl0uR5UDw66xkDw==}
+
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
@@ -2810,6 +2836,17 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
+  '@babylonjs/core@8.46.2': {}
+
+  '@babylonjs/gui@8.46.2(@babylonjs/core@8.46.2)':
+    dependencies:
+      '@babylonjs/core': 8.46.2
+
+  '@babylonjs/loaders@8.46.2(@babylonjs/core@8.46.2)(babylonjs-gltf2interface@8.46.2)':
+    dependencies:
+      '@babylonjs/core': 8.46.2
+      babylonjs-gltf2interface: 8.46.2
+
   '@emnapi/runtime@1.5.0':
     dependencies:
       tslib: 2.8.1
@@ -3974,6 +4011,8 @@ snapshots:
   aria-hidden@1.2.4:
     dependencies:
       tslib: 2.8.1
+
+  babylonjs-gltf2interface@8.46.2: {}
 
   balanced-match@1.0.2: {}
 
