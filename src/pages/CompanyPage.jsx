@@ -94,10 +94,10 @@ const CompanyPage = () => {
               We are looking for exceptional talent to solve the hardest problems in national security.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a href="mailto:careers@argus.global" className="btn-primary">
+              <a href="mailto:contact@argusai.uk" className="btn-primary">
                 View Open Roles
               </a>
-              <a href="mailto:info@argus.global" className="btn-secondary">
+              <a href="mailto:contact@argusai.uk" className="btn-secondary">
                 Contact Us
               </a>
             </div>

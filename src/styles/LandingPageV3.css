@@ -1,0 +1,187 @@
+/* LandingPageV3.css */
+:root {
+    --argus-bg-dark: #050505;
+    --argus-text-main: #e0e0e0;
+    --argus-accent: #ff3333;
+    /* Red accent based on description, changeable */
+    --argus-surface: #111111;
+}
+
+.argus-v3-container {
+    background-color: var(--argus-bg-dark);
+    color: var(--argus-text-main);
+    font-family: 'Inter', sans-serif;
+    /* Assuming Inter or similar sans-serif */
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.argus-v3-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.argus-v3-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.argus-v3-nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.argus-v3-nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+.argus-v3-nav-link:hover {
+    color: white;
+}
+
+/* Hero Section */
+.argus-v3-hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.argus-v3-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.6);
+}
+
+.argus-v3-hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.argus-v3-hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    background: linear-gradient(180deg, #fff 0%, #aaa 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.argus-v3-hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.argus-v3-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: white;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.argus-v3-btn:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+/* Features Section */
+.argus-v3-features {
+    padding: 6rem 3rem;
+    background: var(--argus-bg-dark);
+}
+
+.argus-v3-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.argus-v3-feature-card {
+    background: var(--argus-surface);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.argus-v3-feature-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.argus-v3-feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.argus-v3-feature-desc {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+}
+
+/* News Section */
+.argus-v3-news {
+    padding: 6rem 3rem;
+    background: #0a0a0a;
+}
+
+.argus-v3-section-header {
+    margin-bottom: 4rem;
+    text-align: left;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.argus-v3-section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
