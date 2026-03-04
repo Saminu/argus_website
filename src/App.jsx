@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
+import LandingPageV2 from './pages/LandingPageV2'
 // import LandingPageV3 from './pages/LandingPageV3'
 import SolutionsPage from './pages/SolutionsPage'
 import ProductsPage from './pages/ProductsPage'
