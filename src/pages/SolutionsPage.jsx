@@ -12,7 +12,7 @@ const SolutionsPage = () => {
               Industry Solutions
             </h1>
             <p className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-              Argus Systems empowers frontline workers across diverse industries with hands-free visual intelligence and open-source flexibility.
+              Argus Robotics empowers frontline workers across diverse industries with hands-free visual intelligence and open-source flexibility.
             </p>
             <Link to="/company" className="btn-primary">
               Request a Demo
@@ -146,7 +146,7 @@ const SolutionsPage = () => {
             Ready to Find Your Solution?
           </h2>
           <p className="text-xl mb-10 leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-            Contact our sales team to discuss how Argus Systems can be tailored to your industry's specific needs.
+            Contact our sales team to discuss how Argus Robotics can be tailored to your industry's specific needs.
           </p>
           <Link to="/company" className="btn-primary">
             Get a Custom Solution

@@ -104,8 +104,8 @@ const HealthcarePage = () => {
             Advance Healthcare with Argus
           </h2>
           <p className="text-xl mb-10 leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-              Discover how Argus Systems can revolutionize patient care and medical operations.
-            </p>
+            Discover how Argus Robotics can revolutionize patient care and medical operations.
+          </p>
           <Link to="/company" className="btn-primary">
             Get a Custom Solution
           </Link>

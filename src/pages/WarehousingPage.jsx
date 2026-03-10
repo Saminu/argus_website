@@ -104,8 +104,8 @@ const WarehousingPage = () => {
             Transform Your Warehouse Operations
           </h2>
           <p className="text-xl mb-10 leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-              Discover how Argus Systems can enhance efficiency and accuracy in your warehousing and logistics.
-            </p>
+            Discover how Argus Robotics can enhance efficiency and accuracy in your warehousing and logistics.
+          </p>
           <Link to="/company" className="btn-primary">
             Get a Custom Solution
           </Link>

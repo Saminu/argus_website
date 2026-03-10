@@ -104,8 +104,8 @@ const OilGasPage = () => {
             Optimize Your Oil & Gas Operations
           </h2>
           <p className="text-xl mb-10 leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-              Explore how Argus Systems can enhance safety and efficiency in your oil and gas projects.
-            </p>
+            Explore how Argus Robotics can enhance safety and efficiency in your oil and gas projects.
+          </p>
           <Link to="/company" className="btn-primary">
             Get a Custom Solution
           </Link>

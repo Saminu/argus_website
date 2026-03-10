@@ -48,7 +48,7 @@ const ResourcesPage = () => {
               </div>
               <h3 className="text-2xl font-bold text-pure-white mb-3">Case Studies</h3>
               <p className="text-concrete-light leading-relaxed">
-                Real-world examples of how Argus Systems is transforming industries.
+                Real-world examples of how Argus Robotics is transforming industries.
               </p>
             </div>
 

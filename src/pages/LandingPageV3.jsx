@@ -99,8 +99,8 @@ const LandingPageV3 = () => {
             {/* Simple Footer */}
             <footer style={{ padding: '4rem 3rem', background: 'black', borderTop: '1px solid #222', display: 'flex', justifyContent: 'space-between', color: '#666' }}>
                 <div>
-                    <h4 style={{ color: 'white', marginBottom: '1rem' }}>ARGUS SYSTEMS</h4>
-                    <p style={{ fontSize: '0.9rem' }}>© 2026 Argus Systems. All rights reserved.</p>
+                    <h4 style={{ color: 'white', marginBottom: '1rem' }}>ARGUS ROBOTICS</h4>
+                    <p style={{ fontSize: '0.9rem' }}>© 2026 Argus Robotics. All rights reserved.</p>
                 </div>
                 <div style={{ display: 'flex', gap: '2rem' }}>
                     <a href="#" style={{ color: '#666', textDecoration: 'none' }}>Privacy</a>

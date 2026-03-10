@@ -45,7 +45,7 @@ const CompanyPage = () => {
               <div>
                 <h2 className="text-3xl font-medium mb-8">Our Response</h2>
                 <p className="text-lg text-gray-400 font-light leading-relaxed mb-8">
-                  Argus Systems is building the software infrastructure for the next generation of intelligent robotics. We reject the notion that AI is inherently dangerous; rather, we believe that responsible, sovereign AI is the ultimate tool for progress.
+                  Argus Robotics is building the software infrastructure for the next generation of intelligent robotics. We reject the notion that AI is inherently dangerous; rather, we believe that responsible, sovereign AI is the ultimate tool for progress.
                 </p>
                 <p className="text-lg text-gray-400 font-light leading-relaxed">
                   Our commitment is to open standards, transparency, and the unwavering support of those who defend our freedoms.

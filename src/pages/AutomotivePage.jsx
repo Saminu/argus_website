@@ -104,8 +104,8 @@ const AutomotivePage = () => {
             Drive Innovation in Automotive
           </h2>
           <p className="text-xl mb-10 leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-              Discover how Argus Systems can revolutionize your automotive operations. Contact us for a tailored solution.
-            </p>
+            Discover how Argus Robotics can revolutionize your automotive operations. Contact us for a tailored solution.
+          </p>
           <Link to="/company" className="btn-primary">
             Get a Custom Solution
           </Link>

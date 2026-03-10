@@ -104,8 +104,8 @@ const ManufacturingPage = () => {
             Innovate Your Manufacturing Process
           </h2>
           <p className="text-xl mb-10 leading-relaxed" style={{ color: 'var(--concrete-light)' }}>
-              Discover how Argus Systems can enhance efficiency and precision in your manufacturing operations.
-            </p>
+            Discover how Argus Robotics can enhance efficiency and precision in your manufacturing operations.
+          </p>
           <Link to="/company" className="btn-primary">
             Get a Custom Solution
           </Link>
