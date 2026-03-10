@@ -41,9 +41,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                <span className="text-black font-bold text-lg">A</span>
-              </div>
+              <img src="/images/argus-shield-logo.png" alt="Argus Robotics" className="w-9 h-9 object-contain" />
               <span className="text-xl font-medium tracking-tight text-white group-hover:opacity-80 transition-opacity">ARGUS</span>
             </Link>
 
